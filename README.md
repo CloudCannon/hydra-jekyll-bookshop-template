@@ -1,0 +1,1 @@
+# hydra-jekyll-bookshop-template
