@@ -1,5 +1,5 @@
 [component]
-array_structures = [ "components" ]
+array_structures = [ "content_blocks" ]
 label = "Image with text"
 description = "A side by side component with an image, heading and text"
 icon = "wysiwyg"

@@ -108,3 +108,22 @@ body {
 }
 
 @import './navigation';
+@import './footer';
+
+// CMS Styles
+.align-to-left {
+    text-align: left;
+}
+
+.align-to-center {
+    text-align: center;
+}
+
+.align-to-right {
+    text-align: right;
+}
+
+.justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
