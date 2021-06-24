@@ -1,0 +1,20 @@
+logo_image: /images/logo.svg
+navigation_items:
+  - label: Pricing
+    link_url: /pricing/
+    link_type: Text
+  - label: Blog
+    link_url: /blog/
+    link_type: Text
+  - label: About
+    link_url: /about/
+    link_type: Text
+  - label: Contact
+    link_url: /contact/
+    link_type: Text
+  - label: Login
+    link_url: /login/
+    link_type: Text
+  - label: Sign up
+    link_url: /Sign up/
+    link_type: Button

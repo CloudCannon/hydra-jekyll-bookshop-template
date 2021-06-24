@@ -1,0 +1,21 @@
+{% assign c = "c-header-with-image" %}
+
+<div class="{{c}}
+			{{c}}--{{ include.content_alignment | slugify }}
+			component"
+	 style="background: linear-gradient(to bottom, {{ include.background.primary_gradient_color}} 0%, {{ include.background.secondary_gradient_color}} 100%) no-repeat {{ include.background.primary_gradient_color}};
+	 		color: {{ include.text_color }}">
+	<div class="{{c}}__content-wrapper">
+		<div class="{{c}}__heading">{{ include.heading_html }}</div>
+		<div class="{{c}}__subheading">{{ include.subheading_html }}</div>
+		{% bookshop button 
+					label=button_label
+					variant=button_variant
+					link_url=button_link_url %}
+	</div>
+	{% if include.image %}
+		<div class="{{c}}__image-wrapper">
+			<img src="{{ include.image }}" alt="{{ include.heading }}" />
+		</div>
+	{% endif %}
+</div>

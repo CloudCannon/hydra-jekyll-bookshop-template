@@ -1,0 +1,32 @@
+.n-button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 16px 50px;
+	background-color: rgba(255, 255, 255, 0.15);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
+	text-decoration: none;
+	color: var(--light-light-text-color);
+
+	&:hover {
+		background-color: var(--light-page-color);
+		color: #4182e4;
+	}
+
+	&--filled {
+		background-color: var(--light-button-fill);
+		color: var(--light-button-fill-text);
+	}
+
+	&__label {
+		color: inherit;
+	}
+}
+
+.dark {
+	.n-button--filled {
+		background-color: var(--dark-button-fill);
+		color: var(--dark-button-fill-text);
+	}
+}

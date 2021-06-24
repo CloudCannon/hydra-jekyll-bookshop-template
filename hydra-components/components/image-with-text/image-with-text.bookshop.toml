@@ -1,0 +1,12 @@
+[component]
+array_structures = [ "components" ]
+label = "Image with text"
+description = "A side by side component with an image, heading and text"
+icon = "wysiwyg"
+tags = ["Content"]
+
+[props]
+heading_html = "<h2>How can we <strong>double</strong> our sales revenue?</h2>"
+content_html = "<p>Hydra learns your business. By analyzing your sales data, Hydra optimizes your sales process and show you where you should be spending your resources. </p>"
+image = "/images/dashboard.png"
+content_arrangement.select = ["Left", "Right"]

@@ -1,0 +1,40 @@
+title: Jekyll AC Testing Template
+
+plugins:
+  - jekyll-bookshop
+  - bookshop-array-structures
+  - jekyll-postcss-v2
+
+# Multiple bookshops can be used on one website,
+# or different production / staging locations.
+bookshop_locations:
+  - ../hydra-components
+
+exclude:
+  - postcss.config.js
+  - node_modules
+
+# The rest of this array structure will be
+# populated by the bookshop-array-structures plugin.
+_array_structures:
+  content_blocks:
+    style: modal
+
+_select_data:
+  page_themes:
+    - Light
+    - Dark
+  alignments:
+    - Left
+    - Center
+    - Right
+  link_type:
+    - Text
+    - Button
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default

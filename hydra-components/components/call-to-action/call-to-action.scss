@@ -1,0 +1,16 @@
+.c-call-to-action {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&__content {
+		h1, h2, h3, h4, h5, p, li, a {
+			color: var(--light-light-text-color);
+		}
+	}
+
+	.n-button {
+
+	}
+}

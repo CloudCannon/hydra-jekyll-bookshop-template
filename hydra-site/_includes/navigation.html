@@ -1,0 +1,19 @@
+{% assign c = "c-navigation" %}
+{% assign nav = site.data.navigation %}
+
+<div class="{{c}}">
+	<div class="{{c}}__inner-wrapper">
+		<img src="{{ nav.logo_image }}" alt="{{ site.data.general_settings.website_name }}" />
+		<ul class="{{c}}__nav-items">
+			{% for item in nav.navigation_items %}
+				<li>
+					<a class="{{c}}__nav-item
+							  {{c}}__nav-item--{{ item.link_type | slugify }}"
+					   href="{{ item.link_url }}">
+					   <span class="{{c}}__label">{{ item.label }}</span>
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>

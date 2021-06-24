@@ -1,0 +1,18 @@
+.c-content {
+    box-sizing: border-box;
+    width: var(--column);
+    max-width: var(--column-max);
+    margin: 0 auto;
+    padding: var(--s-40-55) var(--s-50-75);
+    border: var(--border);
+    border-radius: var(--radius);
+    text-align: center;
+
+    & >:first-child {
+        margin-top: 0;
+    }
+    
+    & >:last-child {
+        margin-bottom: 0;
+    }
+}

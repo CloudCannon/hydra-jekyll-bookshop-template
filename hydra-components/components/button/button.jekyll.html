@@ -1,0 +1,15 @@
+{% assign n = "n-button" %}
+{% comment %}
+The variable n is used for nested elements. This is to ensure
+the parent component's class variable isn't overridden for any
+items below
+{% endcomment %}
+
+<a class="{{n}}
+		  {{n}}--{{ include.variant | slugify | default: 'filled' }}"
+	href="{{ include.link_url }}"
+	{% if include.open_in_new_tab %}
+		target="_blank"
+	{% endif %}>
+	<span class="{{n}}__label">{{ include.label }}</span>
+</a>
