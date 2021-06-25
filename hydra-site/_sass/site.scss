@@ -13,6 +13,7 @@ body {
     margin: 0;
     font-family: var(--font);
     color: var(--light-text-color);
+    overflow-x: hidden;
 
     &.dark {
         h1, h2, h3, h4, h5 {
@@ -74,35 +75,32 @@ body {
 
     .component {
         position: relative;
-        padding: var(--component-padding) 0;
+        margin: 0 auto;
         background-color: var(--light-page-color);
+        max-width: var(--breakpoint-max);
+
+        &:before, &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: inherit;
+        }
+
+        &:after {
+            left: unset;
+            right: -100%;
+        }
 
         &--alt, &--branded {
             background-color: var(--light-component-alt-color);
-
-            &:before, &:after {
-                content: '';
-                display: block;
-                position: absolute;
-                top: 0;
-                left: -100%;
-                width: 100%;
-                height: 100%;
-                background-color: var(--light-component-alt-color);
-            }
-
-            &:after {
-                left: unset;
-                right: -100%;
-            }
         }
         
        &--branded {
             background-color: var(--light-brand-color);
-
-            &:before, &:after {
-                background-color: var(--light-brand-color);
-            }
         }
     }
 }

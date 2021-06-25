@@ -9,9 +9,9 @@
 		<div class="{{c}}__heading">{{ include.heading_html }}</div>
 		<div class="{{c}}__subheading">{{ include.subheading_html }}</div>
 		{% bookshop button 
-					label=button_label
-					variant=button_variant
-					link_url=button_link_url %}
+					label=include.button_label
+					variant=include.button_variant
+					link_url=include.button_link_url %}
 	</div>
 	{% if include.image %}
 		<div class="{{c}}__image-wrapper">
