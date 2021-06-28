@@ -1,20 +1,20 @@
 {% assign c = "c-image-and-text-blocks" %}
 
-<div class="{{c}}">
+<div class="{{c}}
+			component">
 	{% for block in include.blocks %}
 		<div class="{{c}}__block
-					{{c}}__block--{{ include.content_arrangement | slugify }}
-					component">
+					{{c}}__block--{{ block.content_arrangement | slugify }}">
 			<div class="{{c}}__content-wrapper">
 				<div class="{{c}}__heading">
-					{{ include.heading_html }}
+					{{ block.heading_html }}
 				</div>
 				<div class="{{c}}__content">
-					{{ include.content_html }}
+					{{ block.content_html }}
 				</div>
 			</div>
 			<div class="{{c}}__image-wrapper">
-				<img src="{{ include.image }}" alt="{{ include.heading_html | strip_html }}" />
+				<img src="{{ block.image }}" alt="{{ block.heading_html | strip_html }}" />
 			</div>
 		</div>
 	{% endfor %}

@@ -1,9 +1,58 @@
 link_columns:
-  - links:
-      - link_label:
-        link_url:
-        link_icon:
+  - label: Primary
+    links:
+      - link_label: Pricing
+        link_url: /pricing/
+        icon_image:
+        open_in_new_tab: false
+      - link_label: Blog
+        link_url: /blog/
+        icon_image:
+        open_in_new_tab: false
+      - link_label: About
+        link_url: /about/
+        icon_image:
+        open_in_new_tab: false
+      - link_label: Contact
+        link_url: /contact/
+        icon_image:
+        open_in_new_tab: false
+  - label: Secondary
+    links:
+      - link_label: Login
+        link_url: /login/
+        icon_image:
+        open_in_new_tab: false
+      - link_label: Sign Up
+        link_url: '#'
+        icon_image:
+        open_in_new_tab: false
+      - link_label: Docs
+        link_url: '#'
+        icon_image:
+        open_in_new_tab: false
+      - link_label: Status
+        link_url: '#'
+        icon_image:
+        open_in_new_tab: false
+  - label: Social
+    links:
+      - link_label: Facebook
+        link_url: 'https://facebook.com/cloudcannon/'
+        icon_image: /images/svg/facebook.svg
+        open_in_new_tab: false
+      - link_label: Twitter
+        link_url: 'https://twitter.com/cloudcannon/'
+        icon_image: /images/svg/twitter.svg
+        open_in_new_tab: false
+      - link_label: Youtube
+        link_url: 'https://youtube.com/cloudcannon/'
+        icon_image: /images/svg/youtube.svg
+        open_in_new_tab: false
+      - link_label: RSS
+        link_url: '/feed.xml'
+        icon_image: /images/svg/rss.svg
+        open_in_new_tab: false
 
-social_links:
-
-lower_text_html:
+lower_text_html: >-
+  <p>© 2021 MyApp Ltd. • <a href="#">Terms</a> & <a href="#">Privacy</a> • <a href="https://cloudcannon.com/">Template by CloudCannon</a></p>

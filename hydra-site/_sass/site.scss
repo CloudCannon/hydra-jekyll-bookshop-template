@@ -76,6 +76,8 @@ body {
     .component {
         position: relative;
         margin: 0 auto;
+        padding-left: var(--s-20-40);
+        padding-right: var(--s-20-40);
         background-color: var(--light-page-color);
         max-width: var(--breakpoint-max);
 

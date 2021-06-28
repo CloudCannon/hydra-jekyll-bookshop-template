@@ -4,6 +4,7 @@
 	align-items: flex-start;
 	justify-content: center;
 	padding: 120px 0 var(--component-padding) 0;
+	text-align: center;
 
 	&--center {
 		align-items: center;
@@ -44,6 +45,7 @@
 
 		p {
 			font-weight: 500;
+			line-height: 140%;
 		}
 	}
 

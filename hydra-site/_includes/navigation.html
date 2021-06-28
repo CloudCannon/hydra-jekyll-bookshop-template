@@ -1,7 +1,8 @@
 {% assign c = "c-navigation" %}
 {% assign nav = site.data.navigation %}
 
-<div class="{{c}}">
+<div id="js-nav"
+	 class="{{c}}">
 	<div class="{{c}}__inner-wrapper">
 		<img src="{{ nav.logo_image }}" alt="{{ site.data.general_settings.website_name }}" />
 		<ul class="{{c}}__nav-items">
@@ -14,6 +15,26 @@
 					</a>
 				</li>
 			{% endfor %}
+
+			<li>
+				<a id="js-mobile-toggle"
+				   class="{{c}}__nav-item
+						  {{c}}__nav-item--mobile-toggle"
+				   href="#">
+				   <span class="{{c}}__label">☰</span>
+				</a>
+			</li>
 		</ul>
 	</div>
 </div>
+
+<script>
+	const navToggle = document.getElementById('js-mobile-toggle');
+	const nav = document.getElementById('js-nav');
+	
+	function toggleNav() {
+		nav.classList.toggle('c-navigation--open');
+	}
+
+	navToggle.addEventListener('click', toggleNav);
+</script>

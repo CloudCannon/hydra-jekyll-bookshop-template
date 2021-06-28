@@ -1,0 +1,27 @@
+{% assign c = "c-page-heading" %}
+
+<div class="{{c}} component">
+	{% for post in site.posts %}
+		<div class="{{c}}__post">
+			<div class="{{c}}__post-header">
+				<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+				<div class="{{c}}__post-info">
+					<div class="{{c}}__categories">
+						{% for category in post.categories %}
+							<span class="{{c}}__category">{{ category }}</span>
+						{% endfor %}
+					</div>
+					<span class="{{c}}__date">{{ post.date }}</span>
+				</div>
+			</div>
+			<div class="{{c}}__content">
+				{{ post.content | truncate_words: 255 }}
+			</div>
+
+			{% bookshop button 
+						label="Read More"
+						variant="Filled"
+						link_url=post.url %}
+		</div>
+	{% endfor %}
+</div>

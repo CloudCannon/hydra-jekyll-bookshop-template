@@ -6,6 +6,8 @@
 	padding: var(--component-padding) 0;
 
 	&__content {
+		text-align: center;
+		
 		h1, h2, h3, h4, h5, p, li, a {
 			color: var(--light-light-text-color);
 		}

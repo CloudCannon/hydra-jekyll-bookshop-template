@@ -1,5 +1,38 @@
-{% assign c = "c-call-to-action" %}
-
+{% assign c = "c-footer" %}
+{% assign footer = site.data.footer %}
 <div class="{{c}}">
-
+	<div class="{{c}}__columns">
+		{% for column in footer.link_columns %}
+			<ul class="{{c}}__column">
+				{% for link in column.links %}
+					<li>
+						<a class="{{c}}__link"
+						   href="{{ link.link_url }}"
+						   {% if link.open_in_new_tab %}
+						   	   target="_blank"
+						   {% endif %}>
+						   {% if link.icon_image %}
+						    	{% assign platform = link.link_label %}
+								{% case platform %}
+									{% when "Facebook", "Twitter", "Youtube", "RSS" %}
+										{% assign label = platform | slugify | prepend: '/svg/' | append: '.svg' %}
+										<span class="{{c}}__icon">
+											{% include {{label}} %}
+										</span>
+									{% else %}
+										<img class="{{c}}__icon"
+								      		 src="{{ link.icon_image }}"
+								      		 alt="{{ link.link_label }}" />
+								{% endcase %}
+						   {% endif %}
+							<span class="{{c}}__link-label">{{ link.link_label }}</span>
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
+		{% endfor %}
+	</div>
+	<div class="{{c}}__lower-text">
+		{{ footer.lower_text_html }}
+	</div>
 </div>
