@@ -15,9 +15,9 @@
 						    	{% assign platform = link.link_label %}
 								{% case platform %}
 									{% when "Facebook", "Twitter", "Youtube", "RSS" %}
-										{% assign label = platform | slugify | prepend: '/svg/' | append: '.svg' %}
+										{% assign svg_url = platform | slugify | prepend: '/svg/' | append: '.svg' %}
 										<span class="{{c}}__icon">
-											{% include {{label}} %}
+											{% include {{svg_url}} %}
 										</span>
 									{% else %}
 										<img class="{{c}}__icon"
