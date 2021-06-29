@@ -6,11 +6,14 @@ icon = "wysiwyg"
 tags = ["Content"]
 
 [props]
+heading = "Pricing FAQ"
 
-[props.questions]
+[[props.questions]]
 question_html = "What types of payment do you accept?"
 answer_html = "Credit cards including MasterCard, Visa or American Express."
+[[props.questions]]
 question_html = "Do you offer pricing for nonprofit organizations?"
 answer_html = "Yes, send us a message and we'll set you up on our nonprofit pricing."
+[[props.questions]]
 question_html = "Can I change my plan at a later time?"
 answer_html = "Yes, you can upgrade and downgrade your plan at anytime."

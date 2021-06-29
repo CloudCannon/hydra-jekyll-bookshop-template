@@ -4,15 +4,17 @@
 	<div class="{{c}}__wrapper">
 		{% for plan in include.plans %}
 			<div class="{{c}}__card">
-				<h3 class="{{c}}__title">{{ plan.title }}</h3>
+				<h3 class="{{c}}__title"
+					style="background-color: {{ plan.card_color }}">{{ plan.title }}</h3>
 				<ul class="{{c}}__features">
 					<li>{{ plan.price }}</li>
-					{% for feature in plan.features %}
-						<li>{{ feature }}</li>
+					{% for item in plan.features %}
+						<li>{{ item.feature }}</li>
 					{% endfor %}
 				</ul>
 				<a class="{{c}}__button"
-				   href="{{ plan.button_url }}">Get started →</a>
+				   href="{{ plan.button_url }}"
+				   style="background-color: {{ plan.card_color }}">Get started →</a>
 			</div>
 		{% endfor %}
 	</div>

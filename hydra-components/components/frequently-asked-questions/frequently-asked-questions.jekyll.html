@@ -1,6 +1,7 @@
 {% assign c = "c-frequently-asked-questions" %}
 
 <div class="{{c}} component">
+	<h2 class="{{c}}__heading">{{ include.heading }}</h2>
 	<div class="{{c}}__wrapper">
 		{% for item in include.questions %}
 			<div class="{{c}}__question">

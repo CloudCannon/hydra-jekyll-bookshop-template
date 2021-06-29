@@ -6,8 +6,14 @@
 		align-items: center;
 	}
 
+	&__heading {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
 	&__question {
 		flex: 1 50%;
+		padding: 25px;
 
 		dt {
 			margin: 0 0 5px 0;
