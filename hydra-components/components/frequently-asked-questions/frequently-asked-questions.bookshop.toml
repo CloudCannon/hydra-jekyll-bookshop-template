@@ -5,6 +5,8 @@ description = "Questions and answers section"
 icon = "wysiwyg"
 tags = ["Content"]
 
+[props]
+
 [props.questions]
 question_html = "What types of payment do you accept?"
 answer_html = "Credit cards including MasterCard, Visa or American Express."

@@ -5,6 +5,8 @@ description = "Pricing plan cards"
 icon = "wysiwyg"
 tags = ["Marketing"]
 
+[props]
+
 [props.plans]
 title = "Basic"
 card_color = "#8e8e8e"
