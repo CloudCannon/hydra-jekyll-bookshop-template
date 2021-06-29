@@ -9,50 +9,52 @@
     <title>Jekyll AC Testing Template</title>
 </head>
 <body>
-    {% include navigation.html %}
-    {{ content }}
-    <!-- 
-        A data-bookshop-live enables live editing previews in CloudCannon.
-        To enable live previews of new components, we render all components
-        via a page component that expects an array of content blocks.
-
-        data-bookshop-props is used to control what front matter to bind to.
-        Here we want to bind to all the front matter, so that page.content_blocks
-        is accessible from the bookshop renderer.
-
-        This element will get picked up by the bookshop dev renderer if present,
-        on production this does nothing.
-    -->
-    <div data-bookshop-live="page" data-bookshop-props="page">
+    <div class="body-wrapper">
+        {% include navigation.html %}
+        {{ content }}
         <!-- 
-            Bookshop components are accessed using the bookshop tag, 
-            using the same syntax as the standard Jekyll include tag.
+            A data-bookshop-live enables live editing previews in CloudCannon.
+            To enable live previews of new components, we render all components
+            via a page component that expects an array of content blocks.
+
+            data-bookshop-props is used to control what front matter to bind to.
+            Here we want to bind to all the front matter, so that page.content_blocks
+            is accessible from the bookshop renderer.
+
+            This element will get picked up by the bookshop dev renderer if present,
+            on production this does nothing.
         -->
+        <div data-bookshop-live="page" data-bookshop-props="page">
+            <!-- 
+                Bookshop components are accessed using the bookshop tag, 
+                using the same syntax as the standard Jekyll include tag.
+            -->
 
-        {% if page.content_blocks.size > 0 %}
-            <div class="c-page theme-{{ page.page_theme | slugify | default: 'dark' }}">
+            {% if page.content_blocks.size > 0 %}
+                <div class="c-page theme-{{ page.page_theme | slugify | default: 'dark' }}">
 
-            {% for block in page.content_blocks %}
-                {% bookshop {{block._bookshop_name}} bind=block %}
-            {% endfor %}
+                {% for block in page.content_blocks %}
+                    {% bookshop {{block._bookshop_name}} bind=block %}
+                {% endfor %}
 
-            </div>
-        {% endif %}
+                </div>
+            {% endif %}
+        </div>
+
+
+        {% include footer.html %}
+
+        <!--
+            bookshop javascript loads the renderer for the local component library,
+            as well as the live component for CloudCannon live previews.
+        -->
+        {% unless jekyll.environment == "production" %}
+            {% if jekyll.environment == "staging" %}
+                <script src="/assets/js/bookshop-live.js"></script>
+            {% else %}
+                <script src="http://localhost:6061/bookshop.js"></script>
+            {% endif %}
+        {% endunless %}
     </div>
-
-
-    {% include footer.html %}
-
-    <!--
-        bookshop javascript loads the renderer for the local component library,
-        as well as the live component for CloudCannon live previews.
-    -->
-    {% unless jekyll.environment == "production" %}
-        {% if jekyll.environment == "staging" %}
-            <script src="/assets/js/bookshop-live.js"></script>
-        {% else %}
-            <script src="http://localhost:6061/bookshop.js"></script>
-        {% endif %}
-    {% endunless %}
 </body>
 </html>

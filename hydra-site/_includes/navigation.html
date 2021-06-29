@@ -4,7 +4,9 @@
 <div id="js-nav"
 	 class="{{c}}">
 	<div class="{{c}}__inner-wrapper">
-		<img src="{{ nav.logo_image }}" alt="{{ site.data.general_settings.website_name }}" />
+		<a href="/">
+			<img src="{{ nav.logo_image }}" alt="{{ site.data.general_settings.website_name }}" />
+		</a>
 		<ul class="{{c}}__nav-items">
 			{% for item in nav.navigation_items %}
 				<li>

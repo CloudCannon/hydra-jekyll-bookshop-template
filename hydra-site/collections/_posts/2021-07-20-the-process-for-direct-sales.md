@@ -1,5 +1,5 @@
 ---
-date: 2020-07-20
+date: 2021-06-20
 title: The process for direct sales
 categories:
   - sales

@@ -1,0 +1,11 @@
+{% assign c = "c-author-card" %}
+
+{% assign author_path = page.author_staff_member | prepend: "/staff_members/" | append: "/" %}
+{% assign author = site.staff_members | where: "url", author_path | first %}
+
+<div class="{{c}}">
+	<img class="{{c}}__image" 
+		 src="{{ author.image }}" 
+		 alt="{{ author.name }}" />
+	<p class="{{c}}__text">{{ author.blurb }}</p>
+</div>

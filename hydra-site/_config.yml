@@ -4,6 +4,10 @@ plugins:
   - jekyll-bookshop
   - bookshop-array-structures
   - jekyll-postcss-v2
+  - jekyll-archives
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
 
 # Multiple bookshops can be used on one website,
 # or different production / staging locations.
@@ -14,8 +18,9 @@ exclude:
   - postcss.config.js
   - node_modules
 
-collections_dir: 'collections'
+permalink: pretty
 
+collections_dir: 'collections'
 collections:
   web_pages:
     name: 'Web Pages'
@@ -23,6 +28,12 @@ collections:
     _singular_name: 'Page'
     output: true
     permalink: /:title/
+  staff_members:
+    name: 'Staff Members'
+    _icon: 'web'
+    _hide_content: true
+    _singular_name: 'Staff Mem'
+    output: false
 
 # The rest of this array structure will be
 # populated by the bookshop-array-structures plugin.
@@ -92,3 +103,8 @@ defaults:
       path: _web_pages/index.html
     values:
       permalink: /
+  -
+    scope:
+      type: posts
+    values:
+      layout: post

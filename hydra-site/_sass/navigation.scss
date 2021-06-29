@@ -3,7 +3,7 @@
 	z-index: 4;
 	top: 0;
 	left: 0;
-	padding: 20px;
+	padding: 16px 20px;
 	width: 100%;
 	height: 70px;
 	max-height: 70px;
@@ -12,14 +12,15 @@
 	&--open {
 		@media (max-width: 700px) {
 			position: relative;
+			margin-top: -70px;
 			height: auto;
 			max-height: 800px;
 		}
 
 		#{$c}__nav-item {
-				opacity: 1;
-				pointer-events: all;
-			}
+			opacity: 1;
+			pointer-events: all;
+		}
 	}
 
 	&__inner-wrapper {
@@ -70,18 +71,19 @@
 		text-decoration: none;
 		font-size: 13px;
 		font-weight: 500;
-		opacity: 0;
-		pointer-events: none;
 
 		@media (max-width: 700px) {
 			margin: 0 3px;
 			padding: 20px 10px;
 			width: 100%;
 			border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+			opacity: 0;
+			pointer-events: none;
 		}
 
 		&:hover {
 			border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+			text-decoration: none;
 		}
 
 		&--button {

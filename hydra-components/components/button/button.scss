@@ -12,11 +12,17 @@
 	&:hover {
 		background-color: var(--light-page-color);
 		color: #4182e4;
+		text-decoration: none;
 	}
 
 	&--filled {
 		background-color: var(--light-button-fill);
 		color: var(--light-button-fill-text);
+
+		&:hover {
+			background-color: var(--light-button-fill);
+			color: var(--light-button-fill-text);
+		}
 	}
 
 	&__label {

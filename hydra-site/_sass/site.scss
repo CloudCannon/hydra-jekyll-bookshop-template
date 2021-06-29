@@ -73,6 +73,15 @@ body {
         font-weight: 700;
     }
 
+    a {
+        text-decoration: none;
+        color: var(--light-link-color);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
     .component {
         position: relative;
         margin: 0 auto;
@@ -104,6 +113,21 @@ body {
        &--branded {
             background-color: var(--light-brand-color);
         }
+    }
+}
+
+// Layouts
+
+.body-wrapper {
+   padding-top: 70px;
+}
+
+.layout {
+    margin: 0 auto;
+    padding: var(--component-padding) var(--s-20-40);
+
+    &--post {
+        max-width: 750px;
     }
 }
 

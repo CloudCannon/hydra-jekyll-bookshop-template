@@ -1,0 +1,16 @@
+{% assign c = "c-post-header" %}
+
+<div class="{{c}}">
+	<h3 class="{{c}}__heading
+			   {% if include.title %}
+			   	   {{c}}__heading--title
+			   {% endif %}"><a href="{{ include.post.url }}">{{ include.post.title }}</a></h3>
+	<div class="{{c}}__post-info">
+		<div class="{{c}}__categories">
+			{% for category in include.post.categories %}
+				<span class="{{c}}__category">{{ category | capitalize }}</span>
+			{% endfor %}
+		</div>
+		<span class="{{c}}__date">{{ include.post.date | date_to_long_string }}</span>
+	</div>
+</div>

@@ -1,5 +1,5 @@
 ---
-date: 2020-08-02
+date: 2021-06-02
 title: Sales effectiveness
 categories:
   - sales

@@ -1,0 +1,19 @@
+.c-post-navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 16px 0;
+
+	&__option {
+		font-size: 14px;
+		color: var(--light-link-color);
+
+		&--prev {
+
+		}
+
+		&--next {
+
+		}
+	}
+}
