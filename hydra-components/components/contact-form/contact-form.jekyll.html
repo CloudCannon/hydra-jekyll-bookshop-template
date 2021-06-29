@@ -1,45 +1,49 @@
 {% assign c = "c-contact-form" %}
 
 <div class="{{c}} component">
-	<form class="{{c}}__form"
-		  action="/contact-success/" 
-		  method="post">
-		<input type="hidden" 
-			   name="_to" 
-			   value="{{ include.form_submission_email }}" />
-		<input type="text" 
-			   name="_gotcha" 
-			   style="display: none;">
+	<div class="{{c}}__wrapper">
+		<form class="{{c}}__form"
+			  action="/contact-success/" 
+			  method="post">
+			<input type="hidden" 
+				   name="_to" 
+				   value="{{ include.form_submission_email }}" />
+			<input type="text" 
+				   name="_gotcha" 
+				   style="display: none;">
 
-		<label for="name">Full Name</label>
-		<input type="text" 
-			   name="name" id="name" 
-			   placeholder="Enter your name..." />
+			<label for="name">Full Name</label>
+			<input type="text" 
+				   name="name" id="name" 
+				   placeholder="Enter your name..." />
 
-		<label for="email">Email Address</label>
-		<input type="email" 
-			   name="email" 
-			   id="email" 
-			   placeholder="Enter your email..." 
-			   required />
+			<label for="email">Email Address</label>
+			<input type="email" 
+				   name="email" 
+				   id="email" 
+				   placeholder="Enter your email..." 
+				   required />
 
-		<label for="message">Message</label>
-		<textarea name="message" 
-			   id="message" 
-			   placeholder="Enter your message..."></textarea>
+			<label for="message">Message</label>
+			<textarea name="message" 
+				   id="message" 
+				   placeholder="Enter your message..."></textarea>
+			{% bookshop button 
+						label='Send Message'
+						variant='Filled'
+						submit=true %}
+		</form>
+		<div class="{{c}}__details">
+			<h3 class="{{c}}__heading">Address</h3>
+			<address class="{{c}}__detail">
+				<a target="_blank" 
+				   href="https://www.google.com/maps/place/{{ include.company_details.address | url_encode }}">{{ include.company_details.address | replace: ", ", ", <br>" }}</a>
+			</address>
 
-		<input type="submit" value="Send Message" />
-	</form>
-	<div class="{{c}}__details">
-		<h3 class="{{c}}__heading">Address</h3>
-		<address class="{{c}}__detail">
-			<a target="_blank" 
-			   href="https://www.google.com/maps/place/{{ include.company_details.address | url_encode }}">{{ include.company_details.address | replace: ", ", ", <br>" }}</a>
-		</address>
-
-		<h3 class="{{c}}__heading">Email</h3>
-		<p class="{{c}}__detail">
-			<a href="mailto:support@example.com">support@example.com</a>
-		</p>
+			<h3 class="{{c}}__heading">Email</h3>
+			<p class="{{c}}__detail">
+				<a href="mailto:support@example.com">support@example.com</a>
+			</p>
+		</div>
 	</div>
 </div>

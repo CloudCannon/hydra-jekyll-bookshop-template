@@ -1,8 +1,12 @@
 {% assign c = "c-map" %}
 
-<div class="{{c}} component">
+<div class="{{c}}
+			component
+			component--full">
+	<div class="{{c}}__map" id="map"></div>
 	<script type="text/javascript">
-		window.mapData = {{ inlcude.map | jsonify }};
+
+		window.mapData = {"latitude": {{ include.map.latitude }},"longitude": {{ include.map.longitude }}, "zoom": {{ include.map.zoom}}};
 
 		function initMap() {
 			var myOptions = {

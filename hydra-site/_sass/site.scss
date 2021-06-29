@@ -109,8 +109,14 @@ body {
         &--alt, &--branded {
             background-color: var(--light-component-alt-color);
         }
+
+        &--full {
+            padding-left: 0;
+            padding-right: 0;
+            max-width: none;
+        }
         
-       &--branded {
+        &--branded {
             background-color: var(--light-brand-color);
         }
     }

@@ -1,0 +1,74 @@
+.c-contact-form {
+	&__wrapper {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: flex-start;
+		margin: 0 auto;
+		padding: var(--component-padding) 0;
+		max-width: 750px;
+	}
+
+	&__form {
+		flex: 1 240px;
+		margin: 0 30px;
+
+		label {
+			display: block;
+			margin: 20px 0 5px 0;
+			font-size: 16px;
+		}
+
+		input, textarea {
+			display: block;
+			padding: 10px;
+			width: 100%;
+			box-sizing: border-box;
+			outline: none;
+			border: 1px solid #DDDDDD;
+			font-size: 16px;
+		}
+
+		input {
+
+		}
+
+		textarea {
+			resize: vertical;
+			height: 150px;
+			font-family: var(--font);
+		}
+
+		input.n-button__label {
+			padding: 0;
+			background-color: transparent;
+			border: none;
+			outline: none;
+		}
+	}
+
+	&__details {
+		flex: 1 240px;
+		margin: 0 30px;
+	}
+
+	&__heading {
+		display: block;
+		margin: 20px 0 5px 0;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	&__detail {
+		font-size: 20px;
+
+		a {
+
+		}
+	}
+
+	.n-button {
+		margin: 20px 0 5px 0;
+		width: 100%;
+	}
+}
