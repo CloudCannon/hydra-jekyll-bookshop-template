@@ -1,0 +1,13 @@
+[component]
+array_structures = [ "content_blocks" ]
+label = "Contact Form"
+description = "Generic contact form"
+icon = "wysiwyg"
+tags = ["Text"]
+
+[props]
+form_submission_email = "admin@example.com" # The email address form submissions will be sent to
+
+[props.company_details]
+email = "support@example.com"
+address = "1 Bond Street, Dunedin, New Zealand"
