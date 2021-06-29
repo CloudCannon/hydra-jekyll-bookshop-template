@@ -1,6 +1,6 @@
 [component]
 array_structures = [ "content_blocks" ]
-label = "Quote"
+label = "Staff List"
 description = "Lists all members within the Staff Members collection"
 icon = "wysiwyg"
 tags = ["Content"]

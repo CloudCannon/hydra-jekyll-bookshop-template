@@ -1,6 +1,6 @@
 [component]
 array_structures = [ "content_blocks" ]
-label = "Quote"
+label = "Map"
 description = "Google maps page block"
 icon = "wysiwyg"
 tags = ["Content"]
