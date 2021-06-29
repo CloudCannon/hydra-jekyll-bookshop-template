@@ -1,0 +1,12 @@
+{% assign c = "c-frequently-asked-questions" %}
+
+<div class="{{c}} component">
+	<div class="{{c}}__wrapper">
+		{% for item in include.questions %}
+			<div class="{{c}}__question">
+				<dt>{{ item.question_html }}</dt>
+				<dd>{{ item.answer_html }}</dd>
+			</div>
+		{% endfor %}
+	</div>
+</div>

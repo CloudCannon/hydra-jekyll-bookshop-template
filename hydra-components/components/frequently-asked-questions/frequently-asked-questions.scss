@@ -1,0 +1,23 @@
+.c-frequently-asked-questions {
+	&__wrapper {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__question {
+		flex: 1 50%;
+
+		dt {
+			margin: 0 0 5px 0;
+			font-weight: bold;
+			color: var(--light-text-color);
+		}
+
+		dd {
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
