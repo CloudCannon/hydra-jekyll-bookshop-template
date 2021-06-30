@@ -39,8 +39,6 @@ collections:
     _hide_content: true
     _singular_name: 'Staff Member'
     output: false
-  website_settings:
-    _icon: settings
 
 # Make sure you add any new collections here for them to show in CloudCannon
 _explore:
@@ -93,7 +91,7 @@ defaults:
           width: 1180
           height: 900
           format: p h1 h2 h3 h4 h5 h6 div
-          styles: /assets/css/cms-styles.css
+          styles: /assets/cms-styles.css
           undo: true
           redo: true
           left: align-to-left
