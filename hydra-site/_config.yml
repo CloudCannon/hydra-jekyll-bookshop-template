@@ -40,6 +40,20 @@ collections:
     _singular_name: 'Staff Mem'
     output: false
 
+# Make sure you add any new collections here for them to show in CloudCannon
+_explore:
+  groups:
+    - heading: Pages
+      collections:
+        - web_pages
+    - heading: Blog
+      collections:
+        - posts
+        - staff_members
+    - heading: Settings
+      collections:
+        - data
+
 # The rest of this array structure will be
 # populated by the bookshop-array-structures plugin.
 _array_structures:
