@@ -26,11 +26,11 @@ Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Co
 
 ## Setup
 
-1. Open *Data > General Settings*
+1. Open *Website Settings > General Settings*
 2. Add your website name and live domain URL
 3. Add an author to the Staff Members collection
 4. Build and adjust your website locally, or with live visual editing on [CloudCannon](https://app.cloudcannon.com/)
-5. Add the remaining options to *Data > General Settings* if required
+5. Add the remaining options to *Website Settings > General Settings* if required
 
 ## Develop
 
@@ -78,9 +78,9 @@ Hydra is already optimised for adding, updating and removing pages, and componen
 ### Navigation
 
 * Managed as a data file to give clients better access.
-* Set in the *Data > Navigation* section.
+* Set in the *Website Settings > Navigation* section.
 
 ### Footer
 
 * Managed as a data file to give clients better access.
-* Set in the *Data > Footer* section.
+* Set in the *Website Settings > Footer* section.
