@@ -49,10 +49,11 @@ _explore:
     - heading: Blog
       collections:
         - posts
+        - drafts
         - staff_members
     - heading: Settings
       collections:
-        - data
+        - website_settings
 
 # The rest of this array structure will be
 # populated by the bookshop-array-structures plugin.
