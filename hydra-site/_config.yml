@@ -9,6 +9,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
 
+jekyll-archives:
+  enabled:
+    - categories
+
 # Multiple bookshops can be used on one website,
 # or different production / staging locations.
 bookshop_locations:
@@ -52,6 +56,12 @@ _select_data:
   link_type:
     - Text
     - Button
+
+_comments:
+  live_domain_url: "Remove any '/' at the end of the URL so your domain looks like this - 'https://example.com'"
+  website_description_text: Used for search engine optimisation and sharing on social media
+  social_media_share_image: 1200x675px
+  twitter_handle: E.g. @username
 
 defaults:
   -

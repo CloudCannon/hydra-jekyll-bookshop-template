@@ -1,0 +1,27 @@
+<head>
+    <title>{{ site.data.general_settings.website_name }}</title>
+    {% if page.SEO_options.prevent_indexing %}
+        <meta name="robots" content="noindex,nofollow">
+    {% endif %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="{{ site.data.general_settings.website_name }}">
+    <meta property="og:description" content="{{ page.SEO_options.description | default: site.data.general_settings.website_description_text }}">
+    <meta property="og:image" content="{{ site.data.general_settings.social_media_share_image }}">
+    <meta property="og:url" content="{{ site.data.general_settings.live_domain_url }}{{ page.url }}">
+    <meta name="twitter:card" content="{{ page.SEO_options.description | default: site.data.general_settings.website_description_text }}">
+    <meta property="og:site_name" content="{{ site.data.general_settings.website_name }}">
+    <meta name="twitter:image:alt" content="{{ site.data.general_settings.social_media_share_image }}">
+    <meta property="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:site" content="{{ site.data.general_settings.twitter_handle }}">
+    <link rel="canonical" href="{{ site.data.general_settings.live_domain_url }}/">
+
+    <link rel="stylesheet" href="/assets/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/assets/favicon-16x16.png" sizes="16x16" />
+</head>

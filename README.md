@@ -1,78 +1,86 @@
 # Hydra
 
-Marketing site template for Jekyll. Browse through a [live demo](https://proud-alligator.cloudvent.net/).
+Hydra is a Marketing site template for Jekyll. Browse through a [live demo](https://proper-gull.cloudvent.net/).
 Increase the web presence of your brand with this configurable theme.
 
 ![Hydra template screenshot](images/_screenshot.png)
 
-Hydra was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
+Hydra was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll and Hugo.
+The component library is built and maintained for use with [Bookshop](https://github.com/cloudcannon/bookshop/)
 
-Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
+Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Community](https://cloudcannon.com/community/).
 
 ## Features
 
 * Contact form
 * Pre-built pages
 * Pre-styled components
-* Blog with pagination
+* Blog
 * Post category pages
-* Disqus comments for posts
 * Staff and author system
 * Configurable footer
 * Optimised for editing in [CloudCannon](http://cloudcannon.com/)
 * RSS/Atom feed
-* SEO tags
+* SEO Improvements
 * Google Analytics
 
 ## Setup
 
-1. Add your site and author details in `_config.yml`.
-2. Add your Google Analytics and Disqus keys to `_config.yml`.
-3. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
+1. Open *Data > General Settings*
+2. Add your website name and live domain URL
+3. Add an author to the Staff Members collection
+4. Build and adjust your website locally, or with live visual editing on [CloudCannon](https://app.cloudcannon.com/)
+5. Add the remaining options to *Data > General Settings* if required
 
 ## Develop
 
 Hydra was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
 
-Install the dependencies with [Bundler](http://bundler.io/):
+Install the dependencies for Bookshop:
 
 ~~~bash
+$ npm install
+~~~
+
+Install the Jekyll dependencies with [Bundler](http://bundler.io/):
+
+~~~bash
+$ cd hydra-site
 $ bundle install
 ~~~
 
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
+Run the website:
 
 ~~~bash
-$ bundle exec jekyll serve
+$ cd ../
+$ npm start
 ~~~
 
 ## Editing
 
-Hydra is already optimised for adding, updating and removing pages, staff, advice, company details and footer elements in CloudCannon.
+Hydra is already optimised for adding, updating and removing pages, and components in CloudCannon.
 
 ### Posts
 
 * Add, update or remove a post in the *Posts* collection.
-* The **Staff Author** field links to members in the **Staff** collection.
-* Documentation pages are organised in the navigation by category, with URLs based on the path inside the `_docs` folder.
+* The **Staff Author** field links to members in the **Staff Members** collection.
 * Change the defaults when new posts are created in `_posts/_defaults.md`.
 
 ### Contact Form
 
 * Preconfigured to work with CloudCannon, but easily changed to another provider (e.g. [FormSpree](https://formspree.io/)).
-* Sends email to the address listed in company details.
+* Sends email to the address defined within the component.
 
 ### Staff
 
 * Reused around the site to save multiple editing locations.
-* Add `excluded_in_search: true` to any documentation page's front matter to exclude that page in the search results.
 
 ### Navigation
 
-* Exposed as a data file to give clients better access.
-* Set in the *Data* / *Navigation* section.
+* Managed as a data file to give clients better access.
+* Set in the *Data > Navigation* section.
 
 ### Footer
 
-* Exposed as a data file to give clients better access.
-* Set in the *Data* / *Footer* section.
+* Managed as a data file to give clients better access.
+* Set in the *Data > Footer* section.
