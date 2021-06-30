@@ -24,6 +24,7 @@ exclude:
 
 permalink: pretty
 
+data_dir: 'website_settings'
 collections_dir: 'collections'
 collections:
   web_pages:
