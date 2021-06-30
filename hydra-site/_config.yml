@@ -35,10 +35,12 @@ collections:
     permalink: /:title/
   staff_members:
     name: 'Staff Members'
-    _icon: 'web'
+    _icon: 'supervisor_account'
     _hide_content: true
-    _singular_name: 'Staff Mem'
+    _singular_name: 'Staff Member'
     output: false
+  website_settings:
+    _icon: settings
 
 # Make sure you add any new collections here for them to show in CloudCannon
 _explore:
