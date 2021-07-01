@@ -3,7 +3,13 @@
 {% if include.show_posts %}
 	<div class="{{c}} component">
 		<div class="{{c}}__wrapper">
-			{% for post in site.posts %}
+			{% unless include.tag %}
+				{% assign posts = site.posts %}
+			{% else %}
+				{% assign posts = site.posts | where_exp:"post", "post.categories contains include.tag" %}
+			{% endunless %}
+
+			{% for post in posts %}
 				{% bookshop post-preview %}
 			{% endfor %}
 		</div>

@@ -5,8 +5,6 @@ plugins:
   - bookshop-array-structures
   - jekyll-postcss-v2
   - jekyll-archives
-  - jekyll-sitemap
-  - jekyll-seo-tag
   - jekyll-feed
 
 jekyll-archives:
@@ -31,6 +29,7 @@ collections:
     name: 'Web Pages'
     _icon: 'web'
     _singular_name: 'Page'
+    _slug: 'web_pages'
     output: true
     permalink: /:title/
   staff_members:
@@ -38,6 +37,7 @@ collections:
     _icon: 'supervisor_account'
     _hide_content: true
     _singular_name: 'Staff Member'
+    _slug: 'staff_members'
     output: false
 
 # Make sure you add any new collections here for them to show in CloudCannon

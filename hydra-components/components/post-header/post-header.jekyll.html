@@ -8,7 +8,9 @@
 	<div class="{{c}}__post-info">
 		<div class="{{c}}__categories">
 			{% for category in include.post.categories %}
-				<span class="{{c}}__category">{{ category | capitalize }}</span>
+				<span class="{{c}}__category">
+					<a href="/category/{{ category | slugify }}">{{ category | capitalize }}</a>
+				</span>
 			{% endfor %}
 		</div>
 		<span class="{{c}}__date">{{ include.post.date | date_to_long_string }}</span>

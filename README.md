@@ -66,6 +66,9 @@ Hydra is already optimised for adding, updating and removing pages, and componen
 * The **Staff Author** field links to members in the **Staff Members** collection.
 * Change the defaults when new posts are created in `_posts/_defaults.md`.
 
+## Collections
+* When adding or removing collections, update the Explore View options within the `_config.yml` file. For more information see CloudCannon's documentation on [Explore Groups](https://cloudcannon.com/documentation/edit/interfaces/explore/#keyword:_explore).
+
 ### Contact Form
 
 * Preconfigured to work with CloudCannon, but easily changed to another provider (e.g. [FormSpree](https://formspree.io/)).
