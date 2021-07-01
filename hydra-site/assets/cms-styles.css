@@ -14,3 +14,7 @@
 	text-align: justify;
     text-justify: inter-word;
 }
+
+span.red-text {
+	color: red;
+}
