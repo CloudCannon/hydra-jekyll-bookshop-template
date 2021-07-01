@@ -28,6 +28,9 @@
 	--dark-button-fill: {{ site.data.theme_settings.dark_theme_settings.button_fill_color | default: "#4182e4" }};
 	--dark-button-fill-text: {{ site.data.theme_settings.dark_theme_settings.button_fill_text_color | default: "#4182e4" }};
 
+
+	--content-font-size: 22px;
+
 }
 
 

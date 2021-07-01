@@ -58,7 +58,7 @@ body {
     }
 
     p {
-        font-size: 22px;
+        font-size: var(--content-font-size);
         color: var(--light-text-color);
         margin-bottom: 20px;
         line-height: 140%;
@@ -66,6 +66,7 @@ body {
 
     img {
         max-width: 100%;
+        height: auto;
         object-fit: contain;
     }
 
@@ -80,6 +81,14 @@ body {
         &:hover {
             text-decoration: underline;
         }
+    }
+
+    blockquote {
+        margin: 25px var(--s-20-40) 25px var(--s-20-40);
+        padding: 15px 15px 15px 45px;
+        box-sizing: border-box;
+        border-left: 4px solid rgba(0,0,0,0.2);
+        background-color: rgba(0,0,0,0.04);
     }
 
     .component {
