@@ -147,13 +147,16 @@ body {
     }
 }
 
-.cms-editor-active {
+.cms-region-highlighted {
 // CMS Styles
     .cms-editor-link {
         position: relative;
-        opacity: 1;
-        transition: opacity 0.2s ease-in-out;
 
+        &:after {
+            opacity: 1;
+            transition: opacity 0.2s ease-in-out;
+        }
+        
         &:hover {
             &:after {
                 content: 'Edit Component';
