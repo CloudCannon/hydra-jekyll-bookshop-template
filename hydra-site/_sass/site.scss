@@ -164,6 +164,7 @@ body {
             &:before {
                 content: '';
                 position: absolute;
+                z-index: 9;
                 top: 50%;
                 left: 0;
                 right: 0;
