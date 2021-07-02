@@ -151,6 +151,7 @@ body {
 // CMS Styles
     .cms-editor-link {
         position: relative;
+        outline: unset !important;
 
         &:after {
             opacity: 1;
