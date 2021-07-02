@@ -161,6 +161,19 @@ body {
         &:hover {
             outline: unset !important;
 
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                transform: translateY(-50%);
+                margin: 0 auto;
+                width: 95%;
+                height: 100%;
+                outline: 8px solid #ffc949;
+            }
+
             &:after {
                 content: 'Edit Component';
                 position: absolute;
