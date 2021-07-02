@@ -154,8 +154,8 @@ body {
         outline: unset !important;
 
         &:before {
-            opacity: 0;
-            transition: opacity 0.1s ease-in-out;
+            outline: 8px solid transparent;
+            transition: outline 0.1s ease-in-out;
         }
 
         &:after {
@@ -178,7 +178,6 @@ body {
                 width: 95%;
                 height: 100%;
                 outline: 8px solid #ffc949;
-                opacity: 1;
             }
 
             &:after {
