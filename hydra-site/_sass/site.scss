@@ -153,8 +153,13 @@ body {
         position: relative;
         outline: unset !important;
 
+        &:before {
+            opacity: 0;
+            transition: opacity 0.1s ease-in-out;
+        }
+
         &:after {
-            opacity: 1;
+            opacity: 0;
             transition: opacity 0.1s ease-in-out;
         }
         
@@ -173,6 +178,7 @@ body {
                 width: 95%;
                 height: 100%;
                 outline: 8px solid #ffc949;
+                opacity: 1;
             }
 
             &:after {
