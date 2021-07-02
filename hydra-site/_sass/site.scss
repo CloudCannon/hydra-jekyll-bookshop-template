@@ -98,7 +98,7 @@ body {
         padding-right: var(--s-20-40);
         background-color: var(--light-page-color);
         max-width: var(--breakpoint-max);
-        transition: filter 0.2s ease-in-out; // For CMS editor links
+        transition: filter 0.1s ease-in-out; // For CMS editor links
 
         &:before, &:after {
             content: '';
@@ -147,14 +147,14 @@ body {
     }
 }
 
-.cms-region-highlighted {
+.cms-editor-active {
 // CMS Styles
     .cms-editor-link {
         position: relative;
 
         &:after {
             opacity: 1;
-            transition: opacity 0.2s ease-in-out;
+            transition: opacity 0.1s ease-in-out;
         }
         
         &:hover {
