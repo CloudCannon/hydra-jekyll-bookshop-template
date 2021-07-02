@@ -98,7 +98,7 @@ body {
         padding-right: var(--s-20-40);
         background-color: var(--light-page-color);
         max-width: var(--breakpoint-max);
-        transition: filter 0.1s ease-in-out; // For CMS editor links
+        transition: filter 0.1s ease-in-out, opacity 0.1s ease-in-out; // For CMS editor links
 
         &:before, &:after {
             content: '';
@@ -158,6 +158,8 @@ body {
         }
         
         &:hover {
+            outline: unset;
+
             &:after {
                 content: 'Edit Component';
                 position: absolute;
@@ -180,7 +182,8 @@ body {
             }
 
             .component {
-                filter: blur(10px);
+                filter: grayscale(100%);
+                opacity: 0.2;
             }
         }
     }
