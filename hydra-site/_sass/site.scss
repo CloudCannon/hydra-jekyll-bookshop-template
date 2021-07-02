@@ -98,6 +98,7 @@ body {
         padding-right: var(--s-20-40);
         background-color: var(--light-page-color);
         max-width: var(--breakpoint-max);
+        transition: filter 0.2s ease-in-out; // For CMS editor links
 
         &:before, &:after {
             content: '';
@@ -143,6 +144,42 @@ body {
 
     &--post {
         max-width: 750px;
+    }
+}
+
+.cms-editor-active {
+// CMS Styles
+    .cms-editor-link {
+        position: relative;
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out;
+
+        &:hover {
+            &:after {
+                content: 'Edit Component';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                display: block;
+                background: #ffc949;
+                z-index: 999999;
+                filter: blur(0);
+                text-align: center;
+                width: 125px;
+                padding: 12px 20px;
+                border: 1px solid #e3b23e;
+                border-radius: 6px;
+                box-shadow: 0px 0px 28px rgba(0,0,0,0.2);
+                opacity: 1;
+            }
+
+            .component {
+                filter: blur(10px);
+            }
+        }
     }
 }
 
