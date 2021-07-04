@@ -20,11 +20,11 @@ link_columns:
   - label: Secondary
     links:
       - link_label: Login
-        link_url: /login/
+        link_url: '#'
         icon_image:
         open_in_new_tab: false
       - link_label: Sign Up
-        link_url: '#'
+        link_url: '/pricing/'
         icon_image:
         open_in_new_tab: false
       - link_label: Docs
@@ -55,4 +55,4 @@ link_columns:
         open_in_new_tab: false
 
 lower_text_html: >-
-  <p>© 2021 MyApp Ltd. • <a href="#">Terms</a> & <a href="#">Privacy</a> • <a href="https://cloudcannon.com/">Template by CloudCannon</a></p>
+  <p>© 2021 MyApp Ltd. • <a href="#">Terms</a> & <a href="#">Privacy</a> • <a href="https://cloudcannon.com/community/">Template by CloudCannon</a></p>

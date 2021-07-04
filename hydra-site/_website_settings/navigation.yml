@@ -13,8 +13,8 @@ navigation_items:
     link_url: /contact/
     link_type: Text
   - label: Login
-    link_url: /login/
+    link_url: '#'
     link_type: Text
   - label: Sign up
-    link_url: /Sign up/
+    link_url: '/pricing/'
     link_type: Button

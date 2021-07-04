@@ -1,20 +1,24 @@
 .c-pricing-plans {
 	&__wrapper {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: center;
-		align-items: center;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		grid-gap: 25px;
+		justify-items: center;
 		padding: 75px 0 0 0;
 		text-align: center;
 	}
 
 	&__card {
-		flex: 1 300px;
-		margin: 0 10px 50px 10px;
+		width: 100%;
 		max-width: 425px;
 		border-radius: 5px;
 		box-shadow: 0px 0px 10px #eee;
 		border: 1px solid #eee;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	&__title {
