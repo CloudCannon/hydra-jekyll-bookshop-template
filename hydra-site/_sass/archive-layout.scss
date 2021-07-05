@@ -1,4 +1,6 @@
 .archive-layout {
+	background: var(--page-color);
+
 	&__heading {
 		padding: var(--component-padding) var(--s-20-40) 0 var(--s-20-40);
 		text-align: center;
@@ -18,11 +20,11 @@
 		display: flex;
 		padding: 3px 5px;
 		border-radius: 5px;
-		background: #eee;
+		background: var(--tag-color);
 
 		a {
 			font-size: 12px;
-			color: #888;
+			color: var(--text-color);
 
 			&:hover {
 				text-decoration: none;

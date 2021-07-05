@@ -12,21 +12,30 @@ body {
     -webkit-overflow-scrolling: touch;
     margin: 0;
     font-family: var(--font);
-    color: var(--light-text-color);
+    color: var(--text-color);
     overflow-x: hidden;
 
     &.dark {
-        h1, h2, h3, h4, h5 {
-            color: var(--dark-headings-color);
-        }
+        --brand-color: var(--dark-dark-brand-color);
+        --headings-color: var(--dark-dark-headings-color);
+        --text-color: var(--dark-dark-text-color);
+        --page-color: var(--dark-dark-page-color);
 
-         p, ul, ol, li, a {
-            color: var(--dark-text-color);
-        }
+        --page-color: var(--dark-page-color);
+        --component-alt-color: var(--dark-component-alt-color);
+        --brand-color: var(--dark-brand-color);
+        --headings-color: var(--dark-headings-color);
+        --text-color: var(--dark-text-color);
+        --light-text-color: var(--dark-light-text-color);
+        --link-color: var(--dark-link-color);
+        --button-fill: var(--dark-button-fill);
+        --button-fill-text: var(--dark-button-fill-text);
+        --tag-color: var(--dark-tag-color);
+        --footer-color: var(--dark-footer-color);
     }
 
     h1, h2, h3, h4, h5 {
-        color: var(--light-headings-color);
+        color: var(--headings-color);
     }
 
     h1 {
@@ -59,7 +68,7 @@ body {
 
     p {
         font-size: var(--content-font-size);
-        color: var(--light-text-color);
+        color: var(--text-color);
         margin-bottom: 20px;
         line-height: 140%;
     }
@@ -76,7 +85,7 @@ body {
 
     a {
         text-decoration: none;
-        color: var(--light-link-color);
+        color: var(--link-color);
 
         &:hover {
             text-decoration: underline;
@@ -96,7 +105,7 @@ body {
         margin: 0 auto;
         padding-left: var(--s-20-40);
         padding-right: var(--s-20-40);
-        background-color: var(--light-page-color);
+        background-color: var(--page-color);
         max-width: var(--breakpoint-max);
         transition: filter 0.1s ease-in-out, opacity 0.1s ease-in-out; // For CMS editor links
 
@@ -117,7 +126,7 @@ body {
         }
 
         &--alt, &--branded {
-            background-color: var(--light-component-alt-color);
+            background-color: var(--component-alt-color);
         }
 
         &--full {
@@ -127,7 +136,7 @@ body {
         }
         
         &--branded {
-            background-color: var(--light-brand-color);
+            background-color: var(--brand-color);
         }
     }
 }
@@ -136,6 +145,7 @@ body {
 
 .body-wrapper {
    padding-top: 70px;
+   background-color: var(--page-color);
 }
 
 .layout {

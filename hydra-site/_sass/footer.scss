@@ -1,11 +1,12 @@
 .c-footer { $c: &;
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	padding: 50px var(--s-20-40);
 	font-size: 18px;
-	background-color: #2b2b40;
+	background-color: var(--footer-color);
 
 	&__columns {
 		display: flex;
@@ -88,6 +89,20 @@
 					color: #ffffff;
 				}
 			}
+		}
+	}
+
+	.n-button {
+		position: absolute;
+		bottom: 15px;
+		right: 15px;
+		font-size: 12px;
+		padding: 6px 8px;
+		cursor: pointer;
+		user-select: none;
+
+		svg {
+			padding-right: 8px;
 		}
 	}
 }

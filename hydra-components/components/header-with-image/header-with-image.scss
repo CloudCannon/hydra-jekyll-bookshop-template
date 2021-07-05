@@ -22,6 +22,10 @@
 		}
 	}
 
+	&.component {
+		background-color: var(--brand-color);
+	}
+
 	&__content-wrapper {
 		display: flex;
 		flex-direction: column;
@@ -30,8 +34,8 @@
 
 		h1, h2, h3, h4, p, li {
 			margin: 0;
-			color: inherit;
 			line-height: inherit;
+			color: inherit
 		}
 	}
 

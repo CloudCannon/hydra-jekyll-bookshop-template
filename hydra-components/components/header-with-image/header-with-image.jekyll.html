@@ -2,12 +2,12 @@
 
 <div class="{{c}}
 			{{c}}--{{ include.content_alignment | slugify }}
-			component"
-	 style="background: linear-gradient(to bottom, {{ include.background.primary_gradient_color}} 0%, {{ include.background.secondary_gradient_color}} 100%) no-repeat {{ include.background.primary_gradient_color}};
-	 		color: {{ include.text_color }}">
+			component">
 	<div class="{{c}}__content-wrapper">
-		<div class="{{c}}__heading">{{ include.heading_html }}</div>
-		<div class="{{c}}__subheading">{{ include.subheading_html }}</div>
+		<div class="{{c}}__heading"
+			 style="color: {{ include.text_color }}">{{ include.heading_html }}</div>
+		<div class="{{c}}__subheading"
+			 style="color: {{ include.text_color }}">{{ include.subheading_html }}</div>
 		{% bookshop button 
 					label=include.button_label
 					variant=include.button_variant

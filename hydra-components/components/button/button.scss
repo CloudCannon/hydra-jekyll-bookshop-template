@@ -7,21 +7,21 @@
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	border-radius: 4px;
 	text-decoration: none;
-	color: var(--light-light-text-color);
+	color: var(--light-text-color);
 
 	&:hover {
-		background-color: var(--light-page-color);
+		background-color: var(--page-color);
 		color: #4182e4;
 		text-decoration: none;
 	}
 
 	&--filled {
-		background-color: var(--light-button-fill);
-		color: var(--light-button-fill-text);
+		background-color: var(--button-fill);
+		color: var(--button-fill-text);
 
 		&:hover {
-			background-color: var(--light-button-fill);
-			color: var(--light-button-fill-text);
+			background-color: var(--button-fill);
+			color: var(--button-fill-text);
 		}
 	}
 

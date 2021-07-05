@@ -7,7 +7,7 @@
 	width: 100%;
 	height: 70px;
 	max-height: 70px;
-	background: linear-gradient(to bottom, var(--light-brand-color) 0%, var(--light-brand-color) 100%) no-repeat var(--light-brand-color);
+	background-color: var(--brand-color);
 
 	&--open {
 		@media (max-width: 700px) {
@@ -99,7 +99,7 @@
 
 			&:hover {
 				background: #fff;
-				color: #4182e4;
+				color: var(--brand-color);
 
 				@media (max-width: 700px) {
 					background: unset;

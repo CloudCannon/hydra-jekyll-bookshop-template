@@ -14,7 +14,3 @@ button_label = "Get Started Free"
 button_link_url = "/sign-up/"
 button_variant.select = ["Transparent", "Filled"]
 image = "/images/dashboard.png"
-
-[props.background]
-primary_gradient_color = "#4182e4"
-secondary_gradient_color = "#4182e4"

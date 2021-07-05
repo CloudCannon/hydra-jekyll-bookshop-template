@@ -78,6 +78,8 @@ _comments:
   website_description_text: Used for search engine optimisation and sharing on social media
   social_media_share_image: 1200x675px
   twitter_handle: E.g. @username
+  large_bookmark_icon_image: 32x32px
+  small_bookmark_icon_image: 16x16px
 
 defaults:
   -

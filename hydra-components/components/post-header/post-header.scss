@@ -9,7 +9,7 @@
 		}
 
 		a {
-			color: #000000;
+			color: var(--headings-color);
 
 			&:hover {
 				text-decoration: none;
@@ -38,11 +38,11 @@
 		margin: 0 5px;
 		padding: 3px 5px;
 		border-radius: 5px;
-		background: #eee;
+		background: var(--tag-color);
 
 		a {
 			font-size: 12px;
-			color: #888;
+			color: var(--text-color);
 
 			&:hover {
 				text-decoration: none;
