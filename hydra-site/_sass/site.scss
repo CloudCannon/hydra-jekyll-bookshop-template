@@ -5,15 +5,20 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
     --font: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
     --component-padding: 100px;
-    -webkit-overflow-scrolling: touch;
+    position: relative;
     margin: 0;
     font-family: var(--font);
     color: var(--text-color);
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 
     &.dark {
         --brand-color: var(--dark-dark-brand-color);
@@ -219,6 +224,22 @@ body {
     }
 }
 
+.dark-mode-toggle {
+    .n-button {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        font-size: 12px;
+        padding: 6px 8px;
+        cursor: pointer;
+        user-select: none;
+
+        svg {
+            padding-right: 8px;
+        }
+    }
+}
+    
 @import './navigation';
 @import './footer';
 @import './archive-layout';

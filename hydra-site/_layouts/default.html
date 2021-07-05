@@ -42,6 +42,14 @@
 
         {% include footer.html %}
 
+        <div class="dark-mode-toggle">
+            <a id="js-dark-mode"
+               class="n-button">
+               {% include svg/darklightmode.svg %} <span id="js-mode-label">Dark Mode</span>
+            </a>
+        </div>
+        <script type="text/javascript" src="/assets/js/dark-mode.js"></script>
+
         <!--
             bookshop javascript loads the renderer for the local component library,
             as well as the live component for CloudCannon live previews.
