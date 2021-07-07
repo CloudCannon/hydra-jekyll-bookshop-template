@@ -34,7 +34,7 @@ Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Co
 
 ## Develop
 
-Hydra was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
+Hydra was built with [Jekyll](http://jekyllrb.com/) version 4.2.0, but should support newer versions as well.
 
 Install the dependencies for Bookshop:
 
@@ -45,7 +45,7 @@ $ npm install
 Install the Jekyll dependencies with [Bundler](http://bundler.io/):
 
 ~~~bash
-$ cd hydra-site
+$ cd site
 $ bundle install
 ~~~
 

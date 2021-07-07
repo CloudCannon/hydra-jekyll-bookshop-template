@@ -24,4 +24,13 @@
     <link rel="shortcut icon" href="{{ site.data.general_settings.icons.large_bookmark_icon_image }}">
     <link rel="icon" type="image/png" href="{{ site.data.general_settings.icons.large_bookmark_icon_image }}" sizes="32x32" />
     <link rel="icon" type="image/png" href="{{ site.data.general_settings.icons.small_bookmark_icon_image }}" sizes="16x16" />
+
+    <link rel="apple-touch-icon" sizes="128x128" href="{{ site.data.general_settings.icons.small_mobile_icon_image }}">
+    <link rel="apple-touch-icon" sizes="256x256" href="{{ site.data.general_settings.icons.large_mobile_icon_image }}">
+    <link rel="icon" sizes="128x128" href="{{ site.data.general_settings.icons.small_mobile_icon_image }}" />
+    <link rel="icon" sizes="256x256" href="{{ site.data.general_settings.icons.large_mobile_icon_image }}" />
+
+    {% if site.data.theme_settings.body_font == 'Vollkorn' %}
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Quattrocento|Vollkorn:400,400i,700,700i">
+    {% endif %}
 </head>

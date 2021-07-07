@@ -11,8 +11,9 @@ html {
 
 html,
 body {
-    --font: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+    --font: var(--body-font), "Helvetica Neue", "Helvetica", "Arial";
     --component-padding: 100px;
+    --navigation-offset: 70px;
     position: relative;
     margin: 0;
     font-family: var(--font);
@@ -21,11 +22,6 @@ body {
     -webkit-overflow-scrolling: touch;
 
     &.dark {
-        --brand-color: var(--dark-dark-brand-color);
-        --headings-color: var(--dark-dark-headings-color);
-        --text-color: var(--dark-dark-text-color);
-        --page-color: var(--dark-dark-page-color);
-
         --page-color: var(--dark-page-color);
         --component-alt-color: var(--dark-component-alt-color);
         --brand-color: var(--dark-brand-color);
@@ -105,12 +101,22 @@ body {
         background-color: rgba(0,0,0,0.04);
     }
 
+    .component-wrapper {
+        &--alt {
+            background-color: var(--component-alt-color);
+        }
+
+        &--branded {
+            background-color: var(--brand-color);
+        }
+    }
+
     .component {
         position: relative;
         margin: 0 auto;
         padding-left: var(--s-20-40);
         padding-right: var(--s-20-40);
-        background-color: var(--page-color);
+        // background-color: var(--page-color);
         max-width: var(--breakpoint-max);
         transition: filter 0.1s ease-in-out, opacity 0.1s ease-in-out; // For CMS editor links
 
@@ -130,10 +136,6 @@ body {
             right: -100%;
         }
 
-        &--alt, &--branded {
-            background-color: var(--component-alt-color);
-        }
-
         &--full {
             padding-left: 0;
             padding-right: 0;
@@ -149,7 +151,7 @@ body {
 // Layouts
 
 .body-wrapper {
-   padding-top: 70px;
+   padding-top: var(--navigation-offset);
    background-color: var(--page-color);
 }
 

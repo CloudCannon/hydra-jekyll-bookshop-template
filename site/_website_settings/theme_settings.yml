@@ -22,3 +22,4 @@ dark_theme_settings:
   button_fill_text_color: "#ffffff"
   tag_color: '#444444'
   footer_color: '#000000'
+body_font: 'San Francisco'

@@ -33,6 +33,7 @@
 	--dark-footer-color: {{ site.data.theme_settings.dark_theme_settings.footer_color | default: "#2b2b40" }};
 
 
+	--body-font: {{ site.data.theme_settings.body_font }};
 	--content-font-size: 22px;
 
 }
