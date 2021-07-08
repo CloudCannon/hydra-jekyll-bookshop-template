@@ -10,6 +10,8 @@ light_theme_settings:
   button_fill_text_color: "#ffffff"
   tag_color: '#eeeeee'
   footer_color: '#2b2b40'
+  footer_link_color: '#999999'
+  footer_link_hover_color: '#ffffff'
 dark_theme_settings:
   page_color: "#131313"
   component_alt_color: "#1a1a1a"
@@ -22,4 +24,6 @@ dark_theme_settings:
   button_fill_text_color: "#ffffff"
   tag_color: '#444444'
   footer_color: '#000000'
+  footer_link_color: '#999999'
+  footer_link_hover_color: '#ffffff'
 body_font: 'San Francisco'

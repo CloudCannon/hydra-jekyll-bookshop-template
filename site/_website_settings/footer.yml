@@ -1,5 +1,6 @@
 link_columns:
   - label: Primary
+    heading:
     links:
       - link_label: Pricing
         link_url: /pricing/
@@ -18,6 +19,7 @@ link_columns:
         icon_image:
         open_in_new_tab: false
   - label: Secondary
+    heading:
     links:
       - link_label: Login
         link_url: '#'
@@ -36,6 +38,7 @@ link_columns:
         icon_image:
         open_in_new_tab: false
   - label: Social
+    heading:
     links:
       - link_label: Facebook
         link_url: 'https://facebook.com/cloudcannon/'
