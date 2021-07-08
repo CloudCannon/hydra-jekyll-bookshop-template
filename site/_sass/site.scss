@@ -213,7 +213,7 @@ body {
                 display: block;
                 background: #ffc949;
                 z-index: 999999;
-                filter: blur(0);
+                filter: blur(4);
                 text-align: center;
                 width: 125px;
                 padding: 12px 20px;
@@ -224,8 +224,7 @@ body {
             }
 
             .component {
-                filter: grayscale(100%);
-                opacity: 0.2;
+                opacity: 0.9;
             }
         }
     }
