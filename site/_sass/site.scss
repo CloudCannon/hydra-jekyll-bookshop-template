@@ -124,7 +124,7 @@ body {
     padding-right: var(--s-20-40);
     // background-color: var(--page-color);
     max-width: var(--breakpoint-max);
-    transition: filter 0.1s ease-in-out, opacity 0.1s ease-in-out; // For CMS editor links
+    transition: filter 0.2s ease-out, opacity 0.1s ease-in-out; // For CMS editor links
 
     &:before, &:after {
         content: '';
@@ -191,7 +191,6 @@ body {
                 display: block;
                 background: #ffc949;
                 z-index: 999999;
-                filter: blur(0);
                 text-align: center;
                 width: 125px;
                 padding: 12px 20px;
@@ -202,7 +201,7 @@ body {
             }
 
             .component {
-                filter: blur(10px);
+                filter: blur(4px);
             }
         }
     }
