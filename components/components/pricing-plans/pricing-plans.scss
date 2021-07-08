@@ -36,10 +36,12 @@
 		list-style: none;
 		li {
 			padding: 20px 0;
+			font-size: 1.6em;
+			font-weight: 450;
 		}
 
 		li:first-child {
-			font-size: 19px;
+			font-size: 1.9em;
 		}
 	}
 
@@ -51,5 +53,6 @@
 		text-decoration: none;
 		border-radius: 0 0 2px 2px;
 		font-weight: 450;
+		font-size: 1.7em;
 	}
 }

@@ -1,6 +1,8 @@
 .c-quote { $c: &;
 	display: flex;
+	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 	margin: 0 auto;
 	padding: var(--component-padding) 0;
 	max-width: 750px;
@@ -32,6 +34,7 @@
 		flex: 1;
 		margin: 0;
 		padding: 18px 25px;
+		max-width: 600px;
 		quotes: "“" "”" "‘" "’";
 	}
 
@@ -42,7 +45,7 @@
 		&:before {
 			color: #ccc;
 			content: open-quote;
-			font-size: 4em;
+			font-size: 3em;
 			line-height: 0.1em;
 			margin-right: 0.25em;
 			vertical-align: -0.4em;
@@ -52,7 +55,7 @@
 	&__quote-details {
 		margin: 10px 0 0 0;
 		font-weight: bold;
-		font-size: .85em;
+		font-size: 1.4em;
 		font-style: normal;
 	}
 }
