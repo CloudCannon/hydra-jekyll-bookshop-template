@@ -173,35 +173,13 @@ body {
 // CMS Styles
     .cms-editor-link {
         position: relative;
-        outline: unset !important;
-
-        &:before {
-            outline: 8px solid transparent;
-            transition: outline 0.1s ease-in-out;
-        }
 
         &:after {
-            opacity: 0;
+            opacity: 1;
             transition: opacity 0.1s ease-in-out;
         }
         
         &:hover {
-            outline: unset !important;
-
-            &:before {
-                content: '';
-                position: absolute;
-                z-index: 9;
-                top: 50%;
-                left: 0;
-                right: 0;
-                transform: translateY(-50%);
-                margin: 0 auto;
-                width: 95%;
-                height: 100%;
-                outline: 8px solid #ffc949;
-            }
-
             &:after {
                 content: 'Edit Component';
                 position: absolute;
@@ -213,7 +191,7 @@ body {
                 display: block;
                 background: #ffc949;
                 z-index: 999999;
-                filter: blur(4px);
+                filter: blur(0);
                 text-align: center;
                 width: 125px;
                 padding: 12px 20px;
@@ -224,7 +202,7 @@ body {
             }
 
             .component {
-                opacity: 0.9;
+                filter: blur(10px);
             }
         }
     }
