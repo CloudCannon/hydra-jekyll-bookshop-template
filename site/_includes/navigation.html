@@ -4,14 +4,19 @@
 <div id="js-nav"
 	 class="{{c}}">
 	<div class="{{c}}__inner-wrapper">
-		<a href="/">
-			<img src="{{ nav.logo_image }}" alt="{{ site.data.general_settings.website_name }}" />
-		</a>
+		{% if nav.logo_image %}
+			<a href="/">
+				<img src="{{ nav.logo_image }}" alt="{{ site.data.general_settings.website_name }}" />
+			</a>
+		{% endif %}
 		<ul class="{{c}}__nav-items">
 			{% for item in nav.navigation_items %}
 				<li>
 					<a class="{{c}}__nav-item
-							  {{c}}__nav-item--{{ item.link_type | slugify }}"
+							  {{c}}__nav-item--{{ item.link_type | slugify }}
+							  {% if page.url == item.link_url %}
+							  {{c}}__nav-item--active
+							  {% endif %}"
 					   href="{{ item.link_url }}">
 					   <span class="{{c}}__label">{{ item.label }}</span>
 					</a>
