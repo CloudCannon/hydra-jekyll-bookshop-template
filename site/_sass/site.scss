@@ -177,7 +177,7 @@ body.cms-editor-active {
 // CMS Styles
     .cms-editor-link {
         position: relative;
-        outline: 0 solid transparent;
+        outline: unset !important;
 
         &:before {
             content: 'Edit Component';
@@ -221,7 +221,7 @@ body.cms-editor-active {
         
         &:hover {
             outline: 0 solid transparent;
-            
+
             &:before {
                 opacity: 1;
                 pointer-events: all;
