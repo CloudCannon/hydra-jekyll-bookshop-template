@@ -175,29 +175,31 @@ body {
         position: relative;
 
         &:after {
+            content: 'Edit Component';
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            display: block;
+            background: #ffc949;
+            z-index: 999999;
+            text-align: center;
+            width: 125px;
+            padding: 12px 20px;
+            border: 1px solid #e3b23e;
+            border-radius: 6px;
+            box-shadow: 0px 0px 28px rgba(0,0,0,0.2);
             opacity: 0;
             transition: opacity 0.2s ease-out;
+            pointer-events: none;
         }
         
         &:hover {
             &:after {
-                content: 'Edit Component';
-                position: fixed;
-                top: 50%;
-                transform: translateY(-50%);
-                left: 0;
-                right: 0;
-                margin: 0 auto;
-                display: block;
-                background: #ffc949;
-                z-index: 999999;
-                text-align: center;
-                width: 125px;
-                padding: 12px 20px;
-                border: 1px solid #e3b23e;
-                border-radius: 6px;
-                box-shadow: 0px 0px 28px rgba(0,0,0,0.2);
                 opacity: 1;
+            pointer-events: all;
             }
 
             .component {
