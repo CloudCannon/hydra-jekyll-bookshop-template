@@ -175,14 +175,14 @@ body {
         position: relative;
 
         &:after {
-            opacity: 1;
-            transition: opacity 0.1s ease-in-out;
+            opacity: 0;
+            transition: opacity 0.2s ease-out;
         }
         
         &:hover {
             &:after {
                 content: 'Edit Component';
-                position: absolute;
+                position: fixed;
                 top: 50%;
                 transform: translateY(-50%);
                 left: 0;
