@@ -174,30 +174,29 @@ body {
     .cms-editor-link {
         position: relative;
 
-        &:after {
+        &:before {
             content: 'Edit Component';
-            position: fixed;
-            top: 50%;
-            transform: translateY(-50%);
+            position: absolute;
+            top: 0;
             left: 0;
-            right: 0;
-            margin: 0 auto;
             display: block;
-            background: #ffc949;
+            background: #ffffff;
+            border: 2px solid #cfcfcf;
             z-index: 999999;
             text-align: center;
             width: 125px;
             padding: 12px 20px;
-            border: 1px solid #e3b23e;
-            border-radius: 6px;
-            box-shadow: 0px 0px 28px rgba(0,0,0,0.2);
+            border-radius: 4px;
+            box-shadow: 0px 0px 28px #ffffff;
             opacity: 0;
-            transition: opacity 0.2s ease-out;
+            transition: opacity 0.15s ease-in;
+            font-family: 'TT Norms Pro';
+            font-size: 16px;
             pointer-events: none;
         }
         
         &:hover {
-            &:after {
+            &:before {
                 opacity: 1;
             pointer-events: all;
             }
