@@ -170,15 +170,18 @@ body {
 }
 
 .cms-editor-active {
+    body {
+        overflow: unset;
+    }
 // CMS Styles
     .cms-editor-link {
         position: relative;
 
         &:before {
             content: 'Edit Component';
-            position: absolute;
-            top: 0;
-            left: 0;
+            position: sticky;
+            top: 25px;
+            left: 25px;
             display: block;
             background: #ffffff;
             border: 2px solid #cfcfcf;
