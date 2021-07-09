@@ -169,10 +169,11 @@ body {
     }
 }
 
+body.cms-editor-active {
+    overflow: unset;
+}
+
 .cms-editor-active {
-    body {
-        overflow: unset;
-    }
 // CMS Styles
     .cms-editor-link {
         position: relative;
@@ -181,7 +182,7 @@ body {
             content: 'Edit Component';
             position: sticky;
             top: 25px;
-            left: 25px;
+            left: 25px;transform: translateY(25px);
             display: block;
             background: #ffffff;
             border: 2px solid #cfcfcf;
@@ -197,11 +198,29 @@ body {
             font-size: 16px;
             pointer-events: none;
         }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 5px;
+            border: 1px solid gold;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.15s ease-in;
+        }
         
         &:hover {
             &:before {
                 opacity: 1;
-            pointer-events: all;
+                pointer-events: all;
+            }
+
+            &:after {
+                opacity: 1;
             }
 
             .component {
