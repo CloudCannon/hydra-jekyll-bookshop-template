@@ -34,16 +34,35 @@
 						submit=true %}
 		</form>
 		<div class="{{c}}__details">
-			<h3 class="{{c}}__heading">Address</h3>
-			<address class="{{c}}__detail">
-				<a target="_blank" 
-				   href="https://www.google.com/maps/place/{{ include.company_details.address | url_encode }}">{{ include.company_details.address | replace: ", ", ", <br>" }}</a>
-			</address>
+			{% if include.company_details.address | size > 2 %}
+				<h3 class="{{c}}__heading">Address</h3>
+				<address class="{{c}}__detail">
+					<a target="_blank" 
+					   href="https://www.google.com/maps/place/{{ include.company_details.address | url_encode }}">{{ include.company_details.address | replace: ", ", ", <br>" }}</a>
+				</address>
+			{% endif %}
 
-			<h3 class="{{c}}__heading">Email</h3>
-			<p class="{{c}}__detail">
-				<a href="mailto:support@example.com">support@example.com</a>
-			</p>
+			{% if include.company_details.postal_address | size > 2 %}
+				<h3 class="{{c}}__heading">Postal Address</h3>
+				<address class="{{c}}__detail">
+					<a target="_blank" 
+					   href="https://www.google.com/maps/place/{{ include.company_details.address | url_encode }}">{{ include.company_details.postal_address | replace: ", ", ", <br>" }}</a>
+				</address>
+			{% endif %}
+
+			{% if include.company_details.email | size > 2 %}
+				<h3 class="{{c}}__heading">Email Address</h3>
+				<p class="{{c}}__detail {{c}}__detail--no-margin">
+					<a href="mailto:{{ include.company_details.email }}">{{ include.company_details.email }}</a>
+				</p>
+			{% endif %}
+
+			{% if include.company_details.phone | size > 2 %}
+				<h3 class="{{c}}__heading">Phone Number</h3>
+				<p class="{{c}}__detail {{c}}__detail--no-margin">
+					<a href="tel:{{ include.company_details.phone }}">{{ include.company_details.phone }}</a>
+				</p>
+			{% endif %}
 		</div>
 	</div>
 </div>
