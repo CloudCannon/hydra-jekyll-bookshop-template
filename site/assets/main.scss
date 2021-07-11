@@ -38,7 +38,7 @@
 
 
 	--body-font: {{ site.data.theme_settings.body_font }};
-	--content-font-size: 2.2em;
+	--content-font-size: {{ site.data.theme_settings.content_font_size_number }}em;
 
 }
 

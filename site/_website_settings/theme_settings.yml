@@ -27,3 +27,4 @@ dark_theme_settings:
   footer_link_color: '#999999'
   footer_link_hover_color: '#ffffff'
 body_font: 'San Francisco'
+content_font_size_number: 2.2

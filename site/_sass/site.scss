@@ -187,7 +187,7 @@ body.cms-editor-active {
             pointer-events: none;
 
             &:after {
-                content: 'Edit Content';
+                content: 'Edit Component';
                 display: block;
                 position: sticky;
                 z-index: 99;
