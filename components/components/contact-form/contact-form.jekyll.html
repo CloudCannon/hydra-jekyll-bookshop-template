@@ -46,7 +46,7 @@
 							submit=true %}
 			</form>
 			<div class="{{c}}__details">
-				{% assign address = include.company_details.postal_address | size %}
+				{% assign address = include.company_details.address | size %}
 				{% if address > 4 %}
 					<h3 class="{{c}}__heading">Address</h3>
 					<address class="{{c}}__detail">
