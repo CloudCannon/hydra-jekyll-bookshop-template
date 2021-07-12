@@ -1,7 +1,8 @@
 {% assign c = "c-image-and-text-blocks" %}
 
 <div class="{{c}}
-			component">
+			component
+			component-attributes">
 	{% for block in include.blocks %}
 		<div class="{{c}}__block
 					{{c}}__block--{{ block.content_arrangement | slugify }}">

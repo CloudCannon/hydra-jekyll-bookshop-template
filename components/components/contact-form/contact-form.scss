@@ -9,9 +9,24 @@
 		max-width: 750px;
 	}
 
+	&__main-heading {
+
+	}
+
+	&__lower-text {
+
+	}
+
+	&__form-wrapper {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		grid-gap: 60px;
+		justify-items: center;
+		width: 100%;
+	}
+
 	&__form {
-		flex: 1 240px;
-		margin: 0 30px;
+		width: 100%;
 
 		label {
 			display: block;
@@ -50,8 +65,7 @@
 	}
 
 	&__details {
-		flex: 1 240px;
-		margin: 0 30px;
+		width: 100%;
 	}
 
 	&__heading {
@@ -63,6 +77,10 @@
 
 	&__detail {
 		font-size: 2.0em;
+
+		&--no-margin {
+			margin: 0;
+		}
 
 		a {
 

@@ -1,7 +1,9 @@
 {% assign c = "c-posts-list" %}
 
 {% if include.show_posts %}
-	<div class="{{c}} component">
+	<div class="{{c}} 
+				component
+				component-attributes">
 		<div class="{{c}}__wrapper">
 			{% unless include.tag %}
 				{% assign posts = site.posts %}
