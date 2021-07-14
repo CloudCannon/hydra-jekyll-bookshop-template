@@ -4,7 +4,6 @@
 <body>
     <div class="body-wrapper">
         {% include navigation.html %}
-        {{ content }}
         <!-- 
             A data-bookshop-live enables live editing previews in CloudCannon.
             To enable live previews of new components, we render all components
@@ -25,6 +24,7 @@
 
             {% bookshop page content_blocks=page.content_blocks %}
         </div>
+        {{ content }}
 
         {% include footer.html %}
 

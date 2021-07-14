@@ -55,4 +55,17 @@
 		font-size: 1.4em;
 		color: #666666;
 	}
+
+	&__author {
+		display: none;
+		align-items: center;
+
+		img {
+			margin: 0 10px 0 0;
+			padding: 0;
+			width: 30px;
+			height: 30px;
+			border-radius: 100%;
+		}
+	}
 }

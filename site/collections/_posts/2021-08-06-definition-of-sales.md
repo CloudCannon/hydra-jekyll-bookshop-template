@@ -4,6 +4,7 @@ title: Definition of sales
 categories:
   - sales
 author_staff_member: james
+content_blocks:
 SEO_options:
   title:
   description:

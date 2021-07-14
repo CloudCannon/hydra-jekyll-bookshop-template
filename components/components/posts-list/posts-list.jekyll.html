@@ -5,6 +5,13 @@
 				component
 				component-attributes">
 		<div class="{{c}}__wrapper">
+			{% if include.heading %}
+				<h2 class="{{c}}__heading">{{ include.heading }}</h2>
+			{% endif %}
+			{% if include.content_text %}
+				<p class="{{c}}__content">{{ include.content_text }}</p>
+			{% endif %}
+
 			{% unless include.tag %}
 				{% assign posts = site.posts %}
 			{% else %}
@@ -12,7 +19,7 @@
 			{% endunless %}
 
 			{% for post in posts %}
-				{% bookshop post-preview %}
+				{% bookshop post-preview post=post %}
 			{% endfor %}
 		</div>
 	</div>

@@ -23,6 +23,10 @@
 		}
 	}
 
+	&__title {
+		display: none;
+	}
+
 	&__inner-wrapper {
 		display: flex;
 		justify-content: space-between;
@@ -51,18 +55,21 @@
 			padding-top: 10px;
 			width: 100%;
 		}
-
-		li {
-			display: flex;
-
-			@media (max-width: 700px) {
-				width: 100%;
-			}
-		}
-
 	}
 
-	&__nav-item {
+	&__item-wrapper {
+		display: flex;
+
+		@media (max-width: 700px) {
+			width: 100%;
+		}
+		
+		&--mobile {
+
+		}
+	}
+
+	&__item {
 		margin: 0 3px;
 		padding: 10px;
 		border-bottom: 1px solid rgba(255, 255, 255, 0);

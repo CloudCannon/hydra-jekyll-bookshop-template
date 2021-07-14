@@ -5,6 +5,7 @@ categories:
   - sales
   - tips
 author_staff_member: gerald
+content_blocks:
 SEO_options:
   title:
   description:
