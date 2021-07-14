@@ -9,6 +9,7 @@ light_theme_settings:
   button_fill_color: "#4182e4"
   button_fill_text_color: "#ffffff"
   tag_color: '#eeeeee'
+  navigation_color: '#5181DD'
   footer_color: '#2b2b40'
   footer_link_color: '#999999'
   footer_link_hover_color: '#ffffff'
@@ -23,6 +24,7 @@ dark_theme_settings:
   button_fill_color: "#737373"
   button_fill_text_color: "#ffffff"
   tag_color: '#444444'
+  navigation_color: '#202020'
   footer_color: '#000000'
   footer_link_color: '#999999'
   footer_link_hover_color: '#ffffff'

@@ -34,6 +34,7 @@ body {
         --button-fill: var(--dark-button-fill);
         --button-fill-text: var(--dark-button-fill-text);
         --tag-color: var(--dark-tag-color);
+        --navigation-color: var(--dark-navigation-color);
         --footer-color: var(--dark-footer-color);
         --footer-link-color: var(--dark-footer-link-color);
         --footer-link-hover-color: var(--dark-footer-link-hover-color);
@@ -166,6 +167,20 @@ body {
 
     &--post {
         max-width: 750px;
+
+        h1:not(:first-child), h2:not(:first-child), h3:not(:first-child), h4:not(:first-child), h5:not(:first-child), h6:not(:first-child) {
+            margin-top: 2.2em;
+        }
+
+        .c-post-preview {
+            display: none;
+        }
+
+        .c-post-navigation {
+            &__next-preview {
+                display: none;
+            }
+        }
     }
 }
 
@@ -251,20 +266,6 @@ body.cms-editor-active {
             .component {
                 // filter: blur(4px);
                 opacity: 0.9;
-            }
-        }
-    }
-}
-
-.layout {
-    &--post {
-        .c-post-preview {
-            display: none;
-        }
-
-        .c-post-navigation {
-            &__next-preview {
-                display: none;
             }
         }
     }
