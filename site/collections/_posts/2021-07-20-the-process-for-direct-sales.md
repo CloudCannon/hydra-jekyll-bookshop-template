@@ -4,7 +4,6 @@ title: The process for direct sales
 categories:
   - sales
 author_staff_member: anna
-content_blocks:
 SEO_options:
   title:
   description:

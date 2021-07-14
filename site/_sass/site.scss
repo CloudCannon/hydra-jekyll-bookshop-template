@@ -256,6 +256,20 @@ body.cms-editor-active {
     }
 }
 
+.layout {
+    &--post {
+        .c-post-preview {
+            display: none;
+        }
+
+        .c-post-navigation {
+            &__next-preview {
+                display: none;
+            }
+        }
+    }
+}
+
 .dark-mode-toggle {
     .n-button {
         position: absolute;

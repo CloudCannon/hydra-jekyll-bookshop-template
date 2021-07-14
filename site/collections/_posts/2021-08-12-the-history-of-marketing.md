@@ -4,7 +4,6 @@ title: The history of marketing
 categories:
   - marketing
 author_staff_member: robin
-content_blocks:
 SEO_options:
   title:
   description:

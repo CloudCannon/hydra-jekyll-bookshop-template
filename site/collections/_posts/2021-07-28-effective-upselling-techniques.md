@@ -5,7 +5,6 @@ categories:
   - sales
   - tips
 author_staff_member: betty
-content_blocks:
 SEO_options:
   title:
   description:

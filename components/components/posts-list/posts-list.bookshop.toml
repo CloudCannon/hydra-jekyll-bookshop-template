@@ -8,4 +8,4 @@ tags = ["Collections"]
 [props]
 show_posts = true
 heading = "Blog"
-content_text = "Keep up with the latest news."
+content_text = "Get an introduction to some industry topics and stay informed with our in-depth articles."
