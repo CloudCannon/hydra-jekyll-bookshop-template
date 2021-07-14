@@ -7,6 +7,9 @@
 	// Breakpoints
     --breakpoint-max: 1180px;
     --breakpoint-min: 900px;
+    
+    --s-design-min: 375;
+    --s-design-max: 900;
 	// Light
 	--page-color: {{ site.data.theme_settings.light_theme_settings.page_color | default: "#ffffff" }};
 	--component-alt-color: {{ site.data.theme_settings.light_theme_settings.component_alt_color | default: "#f5f5f5" }};

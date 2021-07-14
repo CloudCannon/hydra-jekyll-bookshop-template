@@ -3,15 +3,15 @@
 
 	&__top {
 		display: block;
+	}
 
-		img {
-			display: none;
-			padding: 0 20px 20px 0;
-			width: 210px;
-			height: 160px;
-			object-fit: cover;
-			border-radius: 2px;
-		}
+	&__preview-image {
+		display: none;
+		padding: 0 20px 20px 0;
+		width: 210px;
+		height: 160px;
+		object-fit: cover;
+		border-radius: 2px;
 	}
 
 	&__content {
