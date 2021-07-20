@@ -11,7 +11,7 @@ content_html = "<p>Hydra learns your business. By analyzing your sales data, Hyd
 image = "/images/dashboard.png"
 content_arrangement.select = ["Left", "Right"]
 
-[[props.blocks.button]]
+[props.blocks.button]
 button_label = "Get Started Free"
 button_link_url = "/sign-up/"
 button_variant.select = ["Transparent", "Filled"]
