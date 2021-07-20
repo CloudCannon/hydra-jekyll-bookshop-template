@@ -1,3 +1,8 @@
+// These styles are the base styles for all themes. They are also the base set for Hydra. 
+// Changing these will effect all themes, and the Hydra theme.
+// To add a new theme, create a new stylesheet and include it at the bottom of this one.
+
+
 * {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
