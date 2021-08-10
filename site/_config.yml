@@ -1,6 +1,8 @@
+theme: cc-template-components
+
 plugins:
   - jekyll-bookshop
-  - bookshop-array-structures
+  - cloudcannon-jekyll-bookshop
   - jekyll-postcss-v2
   - jekyll-archives
   - jekyll-feed
@@ -12,11 +14,15 @@ jekyll-archives:
 # Multiple bookshops can be used on one website,
 # or different production / staging locations.
 bookshop_locations:
-  - ../components
+  - ../bookshop_gem/components/
+  - ../../cc-template-components/components/
 
 exclude:
   - postcss.config.js
   - node_modules
+
+include:
+  - _cloudcannon
 
 permalink: pretty
 
@@ -70,6 +76,10 @@ _select_data:
   link_type:
     - Text
     - Button
+  website_themes:
+    - 'Hydra'
+    - 'Justice'
+    - 'Cause'
 
 _comments:
   live_domain_url: "Remove any '/' at the end of the URL so your domain looks like this - 'https://example.com'"

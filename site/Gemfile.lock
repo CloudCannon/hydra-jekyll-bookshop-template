@@ -5,19 +5,28 @@ GIT
     jekyll-watch (2.2.1)
       listen (~> 3.0)
 
+GIT
+  remote: https://github.com/cloudcannon/cc-template-components.git
+  revision: 39b22dc92a08ac317ac7a11ca3b39b492a920fbb
+  branch: main
+  specs:
+    cc-template-components (0.1.0)
+      jekyll (~> 4.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.7.0)
+    addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
-    bookshop-array-structures (2.0.0.pre.alpha.14)
+    citrus (3.0.2)
+    cloudcannon-jekyll-bookshop (2.0.0.pre.beta.11)
       dry-inflector (>= 0.1, < 1.0)
       jekyll (>= 3.7, < 5.0)
+      node-runner (>= 1.0, < 2.0)
       toml-rb (>= 2.0, < 3.0)
-    citrus (3.0.2)
     colorator (1.1.0)
     concurrent-ruby (1.1.9)
-    dry-inflector (0.2.0)
+    dry-inflector (0.2.1)
     em-websocket (0.5.2)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -44,7 +53,7 @@ GEM
       terminal-table (~> 2.0)
     jekyll-archives (2.2.1)
       jekyll (>= 3.6, < 5.0)
-    jekyll-bookshop (2.0.0.pre.alpha.18)
+    jekyll-bookshop (2.0.0.pre.beta.11)
       dry-inflector (>= 0.1, < 1.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-feed (0.15.1)
@@ -57,10 +66,11 @@ GEM
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     liquid (4.0.3)
-    listen (3.5.1)
+    listen (3.6.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
+    node-runner (1.0.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.6)
@@ -82,9 +92,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bookshop-array-structures (>= 2.0.0.pre.alpha)
+  cc-template-components!
+  cloudcannon-jekyll-bookshop (= 2.0.0.pre.beta.11)
   jekyll-archives (~> 2.2.1)
-  jekyll-bookshop (>= 2.0.0.pre.alpha)
+  jekyll-bookshop (= 2.0.0.pre.beta.11)
   jekyll-feed (~> 0.15.1)
   jekyll-postcss-v2
   jekyll-watch!
