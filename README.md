@@ -3,7 +3,7 @@
 Hydra is a Marketing site template for Jekyll. Browse through a [live demo](https://proper-gull.cloudvent.net/).
 Increase the web presence of your brand with this configurable theme.
 
-![Hydra template screenshot](images/_screenshot.png)
+![Hydra template screenshot](site/images/_screenshot.png)
 
 Hydra was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll and Hugo.
 The component library is built and maintained for use with [Bookshop](https://github.com/cloudcannon/bookshop/)
