@@ -12,17 +12,20 @@ Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Co
 
 ## Features
 
-* Contact form
+* Easy theme switching
+* Customisable themes
+* Live editing with [CloudCannon](http://cloudcannon.com/)
+* Component library for website building
+* Dark mode
+* Fully configurable Website
 * Pre-built pages
 * Pre-styled components
 * Blog
 * Post category pages
 * Staff and author system
-* Configurable footer
 * Optimised for editing in [CloudCannon](http://cloudcannon.com/)
 * RSS/Atom feed
-* SEO Improvements
-* Google Analytics
+* Search engine optimisation
 
 ## Setup
 
