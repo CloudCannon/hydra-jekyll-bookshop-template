@@ -7,7 +7,6 @@ layout: default
 	{% assign component_theme = "Branded" %}
 	{% assign heading = "<h2>" | append: page.title | append: "</h2>" %}
 	<div class="{{c}}
-            cms-editor-link 
             component-wrapper
             {% if component_theme %}
                 component-wrapper--{{component_theme | slugify }}
@@ -37,7 +36,6 @@ layout: default
 	{% assign c = "c-content" %}
 	{% assign component_theme = "Light" %}
 	<div class="{{c}}
-            cms-editor-link 
             component-wrapper
             {% if component_theme %}
                 component-wrapper--{{component_theme | slugify }}
@@ -53,7 +51,6 @@ layout: default
 	{% assign c = "c-author-card" %}
 	{% assign component_theme = "Dark" %}
 	<div class="{{c}}
-            cms-editor-link 
             component-wrapper
             {% if component_theme %}
                 component-wrapper--{{component_theme | slugify }}
@@ -68,7 +65,6 @@ layout: default
 	{% assign c = "c-post-navigation" %}
 	{% assign component_theme = "Light" %}
 	<div class="{{c}}
-            cms-editor-link 
             component-wrapper
             {% if component_theme %}
                 component-wrapper--{{component_theme | slugify }}
