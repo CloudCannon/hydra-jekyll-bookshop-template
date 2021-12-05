@@ -7,7 +7,6 @@
     "bookshop-live": "bookshop-live -b ./component-library -o site/_cloudcannon/bookshop-live.js",
     "jekyll": "BUNDLE_GEMFILE=site/Gemfile bundle exec jekyll serve --source site --port 6060 --trace --unpublished",
     "postcss": "site/assets/main.css -d _site/assets/main.css",
-
     "autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers 'last 5 versions' -r _site/assets/main.css",
     "start": "run-p bookshop-dev jekyll postcss autoprefixer",
     "postinstall": "mkdir -p site/node_modules/.bin/ && ln -sf ../../../node_modules/.bin/postcss site/node_modules/.bin/postcss"
@@ -23,9 +22,9 @@
   },
   "homepage": "https://github.com/CloudCannon/hydra-jekyll-bookshop-template#readme",
   "devDependencies": {
-    "@bookshop/browser": "^2.0.0",
-    "@bookshop/jekyll-engine": "^2.0.0",
-    "@bookshop/live": "^2.0.0",
+    "@bookshop/browser": "^2.2.0",
+    "@bookshop/jekyll-engine": "^2.2.0",
+    "@bookshop/live": "^2.2.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.3.5",
     "postcss-cli": "^8.3.1",
