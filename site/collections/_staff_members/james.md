@@ -6,5 +6,4 @@ twitter: cloudcannon
 blurb: James spends his weekends watching his favourite NBA team - L.A. Clippers.
 phone:
 phone_extension:
-_hide_content: true
 ---

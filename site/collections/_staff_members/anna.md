@@ -6,5 +6,4 @@ twitter: cloudcannon
 blurb: Anna likes long walks on the beach and buffet breakfast.
 phone:
 phone_extension:
-_hide_content: true
 ---

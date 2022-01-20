@@ -6,5 +6,4 @@ twitter: cloudcannon
 blurb: Tom likes to travel and has visited over 50 countries.
 phone:
 phone_extension:
-_hide_content: true
 ---

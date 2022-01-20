@@ -6,5 +6,4 @@ twitter: cloudcannon
 blurb: Robin is often found tending to her majestic vegetable garden.
 phone:
 phone_extension:
-_hide_content: true
 ---
