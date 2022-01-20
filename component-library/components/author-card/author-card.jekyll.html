@@ -1,6 +1,5 @@
 {% assign c = "c-author-card" %}
-{% assign author_path = page.author_staff_member | prepend: "/staff_members/" | append: "/" %}
-{% assign author = site.staff_members | where: "url", author_path | first %}
+{% assign author = site.staff_members | find: "id", page.author_staff_member %}
 <div class="{{c}}__inner-wrapper">
 	<h4 class="{{c}}__heading">Meet the author</h4>
 	{% if author.twitter %}
@@ -10,8 +9,8 @@
 		<div class="{{c}}__content">
 	{% endif %}
 		<div class="{{c}}__top">
-			<img class="{{c}}__image" 
-				 src="{{ author.image }}" 
+			<img class="{{c}}__image"
+				 src="{{ author.image }}"
 				 alt="{{ author.name }}" />
 			<div class="{{c}}__details">
 				<p class="{{c}}__name">{{ author.name }}</p>
