@@ -1,4 +1,12 @@
 _inputs:
+  _id:
+    type: disabled
+    instance_value: UUID
+  author_staff_member:
+    type: select
+    options:
+      values: collections.staff_members
+      value_key: _id
   live_domain_url:
     comment: "Remove any '/' at the end of the URL so your domain looks like this - 'https://example.com'"
   website_description_text:
@@ -49,7 +57,7 @@ collections_config:
     permalink: /:title/
   staff_members:
     name: 'Staff Members'
-    icon: 'supervisor_account'
+    icon: supervisor_account
     _enabled_editors:
       - data
     singular_name: 'Staff Member'

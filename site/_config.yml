@@ -18,13 +18,9 @@ exclude:
   - postcss.config.js
   - node_modules
 
-include:
-  - _cloudcannon
-
 permalink: pretty
 
-data_dir: '_website_settings'
-collections_dir: 'collections'
+collections_dir: collections
 collections:
   pages:
     output: true
