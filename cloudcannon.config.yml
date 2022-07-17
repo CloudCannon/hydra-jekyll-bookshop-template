@@ -28,7 +28,7 @@ _select_data:
     - Left
     - Center
     - Right
-  link_type:
+  link_types:
     - Text
     - Button
   website_themes:
