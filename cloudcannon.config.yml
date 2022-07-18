@@ -2,6 +2,8 @@ _inputs:
   _id:
     type: disabled
     instance_value: UUID
+  blurb:
+    type: textarea
   author_staff_member:
     type: select
     options:
