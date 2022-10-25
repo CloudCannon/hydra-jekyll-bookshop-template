@@ -2,15 +2,17 @@
 <div class="{{n}}__inner-wrapper">
 	<div class="{{n}}__top">
 		<img class="{{n}}__preview-image" src="{{ include.post.SEO_options.image }}" alt="{{ include.post.title }} image" />
-		{% bookshop post-header 
+		{% bookshop post-header
 			nested=true
 			post=include.post %}
 	</div>
 	<div class="{{n}}__content">
-		{{ include.post.excerpt }}
+		<p>
+			{{ include.post.blurb }}
+		</p>
 	</div>
 
-	{% bookshop button 
+	{% bookshop button
 				label="Read More"
 				variant="Filled"
 				link_url=include.post.url %}
