@@ -57,6 +57,9 @@ collections_config:
     _slug: 'pages'
     output: true
     permalink: /:title/
+    schemas:
+      default:
+        path: site/schemas/page.html
   staff_members:
     name: 'Staff Members'
     icon: supervisor_account
@@ -65,6 +68,13 @@ collections_config:
     singular_name: 'Staff Member'
     _slug: 'staff_members'
     output: false
+    schemas:
+      default:
+        path: site/schemas/staff-member.md
+  posts:
+    schemas:
+      default:
+        path: site/schemas/post.md
 
 # Make sure you add any new collections here for them to show in CloudCannon
 collection_groups:
