@@ -1,6 +1,6 @@
 # Hydra
 
-Hydra is a Marketing site template for Jekyll. Browse through a [live demo](https://proper-gull.cloudvent.net/).
+Hydra is a Marketing site template for Jekyll. Browse through a [live demo](https://generous-guide.cloudvent.net/).
 Increase the web presence of your brand with this configurable theme.
 
 ![Hydra template screenshot](site/images/_screenshot.png)
